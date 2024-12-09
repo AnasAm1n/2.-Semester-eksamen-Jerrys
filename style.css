@@ -1,0 +1,59 @@
+body {
+    font-family: 'Oswald', sans-serif; /* Til hele siden */
+}
+
+.nav-links li a {
+    font-family: 'Oswald', sans-serif; /* Kun til links */
+    font-size: 36px;
+    font-weight: 400; /* Vægt (400: normal, 500: medium, 600: semibold) */
+    text-transform: uppercase;
+}
+
+
+/* Styling til header */
+header {
+    background-color: #c9b29b; /* Match baggrundsfarve fra dit design */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge */
+}
+
+/* Navigation styling */
+.header-nav {
+    background-color: #c9b29b; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Links styling */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 350px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #322d27; /* Sort tekst */
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+
+.nav-links li a:hover {
+    color: #ff5733; /* Orange hover */
+}
+
+/* Logo styling */
+.logo img {
+    max-height: 190px; /* Juster logoets størrelse */
+    object-fit: contain;
+}
+
