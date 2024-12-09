@@ -1,6 +1,5 @@
 .nav-links li a {
     font-family: 'Oswald', sans-serif; /* Kun til links */
-    font-size: 16px;
     font-weight: 300; /* Vægt (400: normal, 500: medium, 600: semibold) */
     text-transform: uppercase;
     text-decoration: none;
@@ -11,14 +10,14 @@
 
 /* Styling til header */
 header {
-    background-color: #c9b29b; /* Match baggrundsfarve fra dit design */
+    background-color: #A7927F; /* Match baggrundsfarve fra dit design */
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge */
 }
 
 /* Navigation styling */
 .header-nav {
-    background-color: #c9b29b; 
+    background-color: #A7927F; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,4 +44,52 @@ header {
     max-height: 130px; /* Juster logoets størrelse */
     object-fit: contain;
 }
+
+
+.footer{
+    background-color: #A7927F;
+    color: #322D27;
+    padding: 20px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-contianer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.footer-sektion{
+    text-align: center;
+    flex: 1;
+}
+.footer-sektion h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.social-ikoner {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-ikoner a img {
+    width: 24px;
+    height: 24px;
+}
+.kontakt-sektion p {
+    line-height: 1.8;
+    
+}
+.adresse-sektion p {
+    line-height: 1.8;
+}
+.Footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
 
