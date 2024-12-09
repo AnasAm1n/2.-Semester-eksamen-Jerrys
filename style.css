@@ -46,6 +46,27 @@ header {
 }
 
 
+
+/*intro video-styling*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Tilføj lidt indvendig margen */
+    
+}
+video {
+    margin-top: -2%;
+    max-width: 103%; /* Begræns den maksimale bredde */
+    height: auto;
+    aspect-ratio: 16/9; /* Bevarer videoens proportioner */
+    border: 1px solid #ccc; /* Tilføj en kant for at se ændringerne tydeligere */
+}
+
+
+
+
+
 .footer{
     background-color: #A7927F;
     color: #322D27;
