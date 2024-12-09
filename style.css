@@ -1,14 +1,13 @@
-body {
-    font-family: 'Oswald', sans-serif; /* Til hele siden */
-}
-
 .nav-links li a {
     font-family: 'Oswald', sans-serif; /* Kun til links */
-    font-size: 36px;
-    font-weight: 400; /* Vægt (400: normal, 500: medium, 600: semibold) */
+    font-size: 16px;
+    font-weight: 300; /* Vægt (400: normal, 500: medium, 600: semibold) */
     text-transform: uppercase;
+    text-decoration: none;
+    color: #322d27; /* Sort tekst */
+    font-size: 25px;
+    transition: color 0.3s;
 }
-
 
 /* Styling til header */
 header {
@@ -37,23 +36,13 @@ header {
     margin: 0;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #322d27; /* Sort tekst */
-    font-size: 25px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-
-
 .nav-links li a:hover {
-    color: #ff5733; /* Orange hover */
+    color: #5A4F46; /* Orange hover */
 }
 
 /* Logo styling */
 .logo img {
-    max-height: 190px; /* Juster logoets størrelse */
+    max-height: 130px; /* Juster logoets størrelse */
     object-fit: contain;
 }
 
