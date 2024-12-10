@@ -150,7 +150,7 @@ video {
     max-width: 1200px;
     padding: 0 20px;
     position: absolute;
-    top: 1200px; /* Juster, hvor meget opad containeren skal flyttes */
+    top: 1330px; /* Juster, hvor meget opad containeren skal flyttes */
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -165,11 +165,14 @@ video {
 }
 
 .text-content h2 {
+    font-family: 'roboto condensed', sans-serif;
+    font-weight: 200;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .text-content p {
+    font-family: 'roboto condensed', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
