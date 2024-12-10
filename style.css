@@ -97,6 +97,108 @@ video {
 
 
 
+/*billede + tekst*/
+.image-container {
+    position: relative;
+    width: 100%; /* Justér bredde */
+    max-width: 600px; /* Tilpas størrelse */
+    margin: 20px auto;
+}
+
+.image-container img {
+    margin-left: 65%;
+    width: 80%;
+    height: auto;
+    border-radius: 10px; /* Afrundede hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    right: 20%; /* Flytter overlay til højre */
+    transform: translateY(-50%);
+    background-color: #7E705F; /* Mørk gennemsigtig baggrund */
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #f9f9f9;
+    text-align: center; /* Tekstjustering */
+    width: 200px; /* Boksen bredde */
+}
+
+.overlay h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 'roboto condensed', sans-serif;
+}
+
+
+
+/* Container styling */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Afstand mellem tekst og billede */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: absolute;
+    top: 1200px; /* Juster, hvor meget opad containeren skal flyttes */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* Tekstindhold */
+.text-content {
+    flex: 1; /* Fyld pladsen proportionalt */
+    max-width: 40%; /* Begræns bredden af tekstsektionen */
+    text-align: left;
+
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #383838; /* Mørk baggrund */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -213,6 +315,11 @@ video {
     font-weight: 400;
     line-height: normal;
 }
+
+
+
+
+
 
 /* Hamburger Menu Styles */
 .ham-menu {
