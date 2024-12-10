@@ -45,51 +45,117 @@ header {
     object-fit: contain;
 }
 
-
+/*FOOTER*/
 .footer{
     background-color: #A7927F;
     color: #322D27;
     padding: 20px 0;
     margin-top: 40px;
+ /*   display: flex;
+    justify-content: space-around;
+    align-items: flex-start;*/
+}
+
+.footer-container{
     display: flex;
     justify-content: space-around;
+    /*width: 100%;*/
     align-items: flex-start;
+    padding:0 20px;
 }
-.footer-contianer{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
+
 .footer-sektion{
     text-align: center;
-    flex: 1;
+    /*flex: 1;*/
 }
+
 .footer-sektion h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     font-weight: 300;
     margin-bottom: 10px;
 }
+
+.some-ikoner-box{
+    display: flex;
+    gap:16px;
+}
+
 .social-ikoner {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
+
 .social-ikoner a img {
     width: 24px;
     height: 24px;
 }
+
+.tlf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:16px;
+}
+
+.mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:16px;
+}
+
 .kontakt-sektion p {
-    line-height: 1.8;
-    
+    line-height: 1.8;   
+    font-family: "Roboto Condensed";
+    /*font-size: 24px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-.adresse-sektion p {
-    line-height: 1.8;
+
+.kontakt-sektion p:hover{
+    color: #5A4F46;
 }
+
+.lokation-ikon-tekst{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:16px;
+}
+
+.lokation-ikon-tekst svg:hover{
+    color:#5A4F46;
+}
+
+.adresse-sektion a {
+    line-height: 1.8;
+    display: flex;
+    text-decoration: none;
+    color:#322d27;
+    font-family: "Roboto Condensed";
+    /*font-size: 24px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.adresse-sektion a:hover{
+    color: #5A4F46;
+}
+
 .Footer-bottom {
     text-align: center;
     margin-top: 10px;
     font-size: 12px;
+    font-family: "Roboto Condensed";
+    /*font-size: 24px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
