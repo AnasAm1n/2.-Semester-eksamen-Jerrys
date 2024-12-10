@@ -1,9 +1,3 @@
-body {
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F3EEE8; /* Baggrundsfarve */
-}
 .nav-links li a {
     font-family: 'Oswald', sans-serif; /* Kun til links */
     font-weight: 300; /* Vægt (400: normal, 500: medium, 600: semibold) */
@@ -51,57 +45,7 @@ header {
     object-fit: contain;
 }
 
-
-/*intro video-styling*/
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Tilføj lidt indvendig margen */
-    
-}
-video {
-    margin-top: -2%;
-    max-width: 103%; /* Begræns den maksimale bredde */
-    height: auto;
-    aspect-ratio: 16/9; /* Bevarer videoens proportioner */
-    border: 1px solid #aeaaaa; /* Tilføj en kant for at se ændringerne tydeligere */
-}
-
-
-
-/*intro tekst-styling*/
-.main {
-    padding: 20px;
-}
-
-.overskrift {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 800px;
-}
-
-.top-overskrift h2 {
-    color: #322D27; /* En varm farve til overskriften */
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.top-overskrift p {
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-
-
-
-
 /*FOOTER*/
-
 .footer{
     background-color: #A7927F;
     color: #322D27;
