@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menukort.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <title>jerry's Forside</title>
+    <title>Jerry's Menukort</title>
 </head>
    
 <body>
@@ -46,7 +47,132 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>  
         </nav>
+        <div class="filter-container">
+            <button class="filter-button" data-filter="snacks">
+                <img src="images/snacks-filter.png" alt="Snacks" class="filter-icon" data-icon="images/snacks-filter.png" data-active="images/snacks-filter-farvet.png">
+            </button>
+            <button class="filter-button" data-filter="pizza">
+                <img src="images/pizza-filter.png" alt="Pizza" class="filter-icon" data-icon="images/pizza-filter.png" data-active="images/pizza-filter-farvet.png">
+            </button>
+            <button class="filter-button" data-filter="burger">
+                <img src="images/burger-filter.png" alt="Burger" class="filter-icon" data-icon="images/burger-filter.png" data-active="images/burger-filter-farvet.png">
+            </button>
+            <button class="filter-button drikkevare" data-filter="drinks">
+                <img src="images/drikkevare-filter.png" alt="Drinks" class="filter-icon" data-icon="images/drikkevare-filter.png" data-active="images/drikkevare-filter-farvet.png">
+            </button>
+        </div>
     </header>
+
+    <main class="menu-section">
+        <div class="menu-item">
+            <img src="images/pepperoni.png" alt="Pepperoni" class="menu-image">
+            <h2>Pepperoni <img src="images/star-icon.png" alt="Star" class="star-icon"></h2>
+            <p>Tomat, ost, pepperoni</p>
+            <span>85 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/margherita.png" alt="Margherita" class="menu-image">
+            <h2>Margherita</h2>
+            <p>Tomat, mozzarella, friske basilikum</p>
+            <span>50 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/Napolitana.png" alt="Napolitana" class="menu-image">
+            <h2>Napolitana</h2>
+            <p>Tomat, ost, kapers, oliven, ansjoser</p>
+            <span>95 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/mexican-burger.png" alt="Mexican burger" class="menu-image">
+            <h2>Mexican burger</h2>
+            <p>Iceberg, tomat, pickles, jalapeños, salsa, sprøde nachos, bolle smurt med Jerry's dressing.</p>
+            <span>70 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/cheese-burger.png" alt="Cheeseburger" class="menu-image">
+            <h2>Cheeseburger</h2>
+            <p>Cheeseburger med tomat, pickles, løg, bolle smurt med Jerry's mayo.</p>
+            <span>70 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/grande-burger.png" alt="Grande Bacon & Cheese" class="menu-image">
+            <h2>Grande Bacon & Cheese</h2>
+            <p>Dobbelt cheeseburger, bacon, iceberg, tomat, pickles, bolle smurt med Jerry's mayo</p>
+            <span>90 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/tops.png" alt="Chili Cheese Tops" class="menu-image">
+            <h2>Chili Cheese Tops (4 stk.)</h2>
+            <p>Sprød panering, smeltet ost, chili</p>
+            <span>25 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/pomfritter.png" alt="Pommes frites" class="menu-image">
+            <h2>Pommes frites</h2>
+            <p>Sprøde kartoffelstænger, let saltet</p>
+            <span>40 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/sticks.png" alt="Mozzarella Sticks" class="menu-image">
+            <h2>Mozzarella Sticks (4 stk.)</h2>
+            <p>Sprøde mozzarella sticks, paneret og friturestegt</p>
+            <span>50 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/faxekondi.png" alt="Faxe Kondi" class="menu-image">
+            <h2>Faxe Kondi 0,5 l</h2>
+            <p>Frisk og sprudlende citrusdrik</p>
+            <span>25 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/pepsi.png" alt="Pepsi" class="menu-image">
+            <h2>Pepsi 0,5 l</h2>
+            <p>Klassisk, forfriskende Pepsi</p>
+            <span>25 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+        <div class="menu-item">
+            <img src="images/pepsimax.png" alt="Pepsi Max" class="menu-image">
+            <h2>Pepsi Max 0,5 l</h2>
+            <p>Klassisk, sukkerfri og forfriskende Pepsi</p>
+            <span>25 DKK</span>
+            <button class="add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
+        </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
@@ -90,5 +216,6 @@
         <!---Copyright-->
         <p class="Footer-bottom">&copy; COPYRIGHT 2024</p>
     </footer>
+    <script src="menukort.js" defer></script>
 </body>
 </html>
