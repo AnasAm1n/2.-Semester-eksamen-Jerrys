@@ -4,11 +4,16 @@
     align-items: center;
     width: 100%;
     padding: 3rem 1rem;
-    margin: 50px 0;
+    margin: 0;
     text-align: center;
-  }
-
-
+    color: #322D27;
+    font-family: Oswald;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.28px;
+}
 
 .jerrys {
 display: flex;
@@ -30,38 +35,163 @@ margin: 0;
 }
 
 .jerrys h1 {
-color: #322D27;
-font-family: Oswald;
-font-size: 24px;
-font-weight: 400;
-text-align: left;
-margin: 0;
+    color: #322D27;
+    font-family: Oswald;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: left;
+    margin: 0;
 }
 
 .jerrys h3 {
     color: #322D27;
     font-family: "Roboto Condensed";
-    font-size: 16px;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: normal;
     text-align: left;
     margin: 0;
 }
 
-
         .jerrys img {
-            width: 300px;
+            width: 500px;
             height: auto;
             padding: 0;
-            }
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .jerrys img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            filter: brightness(1.1);
+        }
+
+        #jerry:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        #deskank:hover {
+            transform: scale(1.05) rotate(-2deg);
+        }
 
 
             .billede1 {
-                margin-left: 30%;
-                margin-top: 5%;
-                margin-right: 15%;
-                margin-bottom: 0%;
-                width: 5%;
-                height: 5%;
+                display: block;
+                margin: 0 auto;
+                width: 500px;
+                height: 550px;
+                flex-shrink: 0;
             }
+
+.reviews-section {
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-color: #A7927F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.reviews-section h1 {
+    color: white;
+    font-family: Oswald;
+    font-size: 64px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.reviews-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.review-card {
+    padding: 60px 40px;
+    background-color: #C4B5A5;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #cec1b3;
+    cursor: pointer;
+}
+
+.review-card h3, 
+.review-card p,
+.review-card .stars {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.review-card h3 {
+    color: white;
+    font-family: Oswald;
+    font-size: 48px;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.review-card p {
+    color: #322D27;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    margin-bottom: 2rem;
+    line-height: 1;
+    text-align: center;
+    max-width: 700px;
+}
+
+.stars {
+    color: #322D27;
+    font-size: 32px;
+    letter-spacing: 8px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.stars span {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.stars span:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: #FFD700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.stars .empty {
+    color: #D9D9D9;
+}
+
+.stars .empty:hover {
+    color: #FFD700;
+}
+
+.review-name, .review-text, .stars {
+    opacity: 1;
+}
 
