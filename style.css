@@ -81,6 +81,8 @@ video {
     padding: 20px;
     border-radius: 8px;
     max-width: 800px;
+    margin-bottom: 15%;
+    margin-top: 6%;
 }
 
 .top-overskrift h2 {
@@ -92,7 +94,7 @@ video {
 .top-overskrift p {
     color: #333;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 2.0;
 }
 
 
@@ -173,26 +175,62 @@ video {
 
 .text-content p {
     font-family: 'roboto condensed', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-weight: 900;
 }
 
-.cta-button {
+
+
+.container-text{
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 2rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.text-p{
+    color: #322D27;
+font-family: "Roboto Condensed";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 35%;
+position: absolute;
+top: 1600px; /* Juster, hvor meget opad containeren skal flyttes */
+left: 2%;
+right: 0;
+margin: 0 auto;
+}
+
+
+.button {
     display: inline-block;
-    background-color: #383838; /* Mørk baggrund */
+    background-color: #322D27; /* Mørk baggrund */
+    font-family: 'roboto condensed', sans-serif;
     color: #fff;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 26px;
     border: none;
-    border-radius: 8px;
+    border-radius: 13px;
     cursor: pointer;
     text-transform: uppercase;
     transition: background-color 0.3s;
+    width: 275px;
+    height: 67px;
+    flex-shrink: 0;
 }
 
-.cta-button:hover {
-    background-color: #555;
+.button:hover {
+    background-color: #5A4F46;
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 
