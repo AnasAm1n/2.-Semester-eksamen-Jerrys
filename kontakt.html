@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="kontakt.js" defer></script>
+    <link rel="stylesheet" href="kontakt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <title>jerry's Forside</title>
+    <title>jerry's Kontakt</title>
 </head>
    
 <body>
     <div class="off-screen-menu">
         <ul>
-            <li><a href="#">Forside</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Om os</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="menukort.html">Menu</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </div>
     
@@ -35,18 +36,101 @@
     <header> 
        <nav class="header-nav">
             <ul class="nav-links">
-                <li><a href="#">Forside</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="menukort.html">Menu</a></li>
             </ul>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/logojerrys.png" alt="Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="#">Om os</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>  
         </nav>
     </header>
+
+    <main>
+        <h1>KONTAKT</h1>
+        <section class="firstsection-contact">
+            <img src="images/kontakt-pizza.png" alt="Pizza">
+            <div>
+                <div class="contact-info">
+                    <h2>Kontakt os</h2>
+                    <p>Tlf: 86 16 18 18</p>
+                    <p>Mail: info@jerrysrestaurant.dk</p>
+                    <p>Find os på sociale medier:</p>
+                    <div class="social-media">
+                      <a href="#"><img src="images/facebook-ikon.png" alt="Facebook"></a>
+                      <a href="#"><img src="images/insta-ikon.png" alt="Instagram"></a>
+                      <a href="#"><img src="images/x-ikon.png" alt="x"></a> 
+                    </div>
+                  </div>
+            </div>
+        </section> 
+        
+        <section class="secondsection-info">
+            <div class="info-sec">
+                <h2>Information</h2>
+                <p>Hos os får du kvalitet og byens bedste mad!</p>
+                <p>Drivkraften bagg vores succes er kundernes gode oplevelse og deres tilfredshed.</p>
+            </div>
+            <div class="tiders-sec">
+                <div class="opening-tid">
+                    <h2>Åbningstider</h2>
+                    <p>Mandag - Torsdag: 16:00 - 21:00
+                        <br>Fredag: 16:00 - 22:30
+                        <br>Lørdag - Søndag: 12:00 - 21:00
+                    </p>
+                </div>
+                <div class="udbringning-tid">
+                    <h2>Udbringningstider</h2>
+                    <p>Mandag - Fredag: 16:30 - 21:30
+                        <br>Lørdag - Søndag: 12:10 - 20:30
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="thirdsection-adress">
+            <div class="adresse-tekst">            
+                <h2>Adresse</h2>
+                <p>Jordbrovej 11, <br>8200 Aarhus N
+                </p>
+            </div>
+
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.7533695282152!2d10.197003076348002!3d56.173227973242746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fc638c4df23%3A0x8698c45dd8ae5ab9!2sJerry&#39;s%20Restaurant%20%26%20Teria!5e1!3m2!1sen!2sdk!4v1733929692655!5m2!1sen!2sdk"
+            width="779"
+            height="475"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </section>
+        <section class="forthsection-send">
+            <h2>Send besked eller anmeldelse</h2>
+            <form class="form" id="sendForm">
+                <div class="form-gruppe">                
+                    <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn" required/>
+                
+                    <input type="text" id="efternavn" name="efternavn" placeholder="Efternavn" required/>
+                </div>
+
+                <div class="form-gruppe">    
+                    <input type="email" id="mail" name="mail" placeholder="Mail" required/>
+                
+                    <input type="text" id="emne" name="emne" placeholder="Emne" required/>
+                </div>
+            
+                <textarea id="besked" name="besked" placeholder="Din besked" required></textarea>
+              
+                <button type="submit">Send</button>
+              </form>
+              
+              <div id="feedback"></div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">

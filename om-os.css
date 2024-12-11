@@ -1,272 +1,67 @@
-.nav-links li a {
-    font-family: 'Oswald', sans-serif; /* Kun til links */
-    font-weight: 300; /* Vægt (400: normal, 500: medium, 600: semibold) */
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #322d27; /* Sort tekst */
-    font-size: 25px;
-    transition: color 0.3s;
-}
-
-/* Styling til header */
-header {
-    background-color: #A7927F; /* Match baggrundsfarve fra dit design */
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge */
-}
-
-/* Navigation styling */
-.header-nav {
-    background-color: #A7927F; 
+.herotext {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Links styling */
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 200px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li a:hover {
-    color: #5A4F46; /* Orange hover */
-}
-
-/* Logo styling */
-.logo img {
-    max-height: 130px; /* Juster logoets størrelse */
-    object-fit: contain;
-}
-
-/*FOOTER*/
-.footer{
-    background-color: #A7927F;
-    color: #322D27;
-    padding: 20px 0;
-    margin-top: 40px;
- /*   display: flex;
-    justify-content: space-around;
-    align-items: flex-start;*/
-}
-
-.footer-container{
-    display: flex;
-    justify-content: space-around;
-    /*width: 100%;*/
-    align-items: flex-start;
-    padding:0 20px;
-}
-
-.footer-sektion{
-    text-align: center;
-    /*flex: 1;*/
-}
-
-.footer-sektion h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-.some-ikoner-box{
-    display: flex;
-    gap:16px;
-}
-
-.social-ikoner {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
-
-.social-ikoner a img {
-    width: 24px;
-    height: 24px;
-}
-
-.tlf{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:16px;
-}
-
-.mail{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:16px;
-}
-
-.kontakt-sektion p {
-    line-height: 1.8;   
-    font-family: "Roboto Condensed";
-    /*font-size: 24px;*/
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.kontakt-sektion p:hover{
-    color: #5A4F46;
-}
-
-.lokation-ikon-tekst{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:16px;
-}
-
-.lokation-ikon-tekst svg:hover{
-    color:#5A4F46;
-}
-
-.adresse-sektion a {
-    line-height: 1.8;
-    display: flex;
-    text-decoration: none;
-    color:#322d27;
-    font-family: "Roboto Condensed";
-    /*font-size: 24px;*/
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.adresse-sektion a:hover{
-    color: #5A4F46;
-}
-
-.Footer-bottom {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 12px;
-    font-family: "Roboto Condensed";
-    /*font-size: 24px;*/
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Hamburger Menu Styles */
-.ham-menu {
-    height: 40px; 
-    width: 40px; 
-    margin-left: 20px; /* Margin til at skubbe det til venstre */
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1000;
-    cursor: pointer; /* Cursor til pointer */
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-around; 
-}
-
-.ham-menu span {
-    height: 4px; 
-    width: 100%; 
-    background-color: #322d27; 
-    border-radius: 5px; 
-    transition: all 0.3s ease; 
-}
-
-/* Transformations for the active state */
-.ham-menu.active span:nth-child(1) {
-    transform: translateY(10px) rotate(45deg); /* Rotate the top line down to form the top of the X */
-}
-
-.ham-menu.active span:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
-}
-
-.ham-menu.active span:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg); /* Rotate the bottom line up to form the bottom of the X */
-}
-
-/* Off-Screen Menu Styles */
-.off-screen-menu {
-    background-color: #A7927F; 
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px; 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 3rem 1rem;
+    margin: 50px 0;
     text-align: center;
-    font-size: 2rem; 
-    transition: right 0.3s ease; /* Smooth transition */
-    z-index: 999; 
+  }
+
+
+
+.jerrys {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+padding: 0 10%;
+margin: 5% 0;
 }
 
-.off-screen-menu.active {
-    right: 0; /* Slide in når aktiv */
+.jerrys-text-container {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 2.25rem;
+max-width: 600px;
+margin: 0;
 }
 
-.off-screen-menu ul {
-    list-style: none;
-    padding: 0;
+.jerrys h1 {
+color: #322D27;
+font-family: Oswald;
+font-size: 24px;
+font-weight: 400;
+text-align: left;
+margin: 0;
+}
+
+.jerrys h3 {
+    color: #322D27;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
     margin: 0;
 }
 
-.off-screen-menu li {
-    margin: 20px 0; /* Mellemrum mellem menu links */
-}
 
-.off-screen-menu a {
-    text-decoration: none; /* Fjern understregning */
-    color: #322d27; /* Match tekstfarve */
-    font-family: 'Oswald', sans-serif; /* Match skrifttype */
-    font-size: 38px; /* Øg skrifttypestørrelse for links */
-    transition: color 0.3s; /* Glidende farveovergang */
-    padding: 10px 0; /* Tilføj polstring for bedre klikområde */
-}
+        .jerrys img {
+            width: 300px;
+            height: auto;
+            padding: 0;
+            }
 
-.off-screen-menu a:hover {
-    color: #5A4F46; /* Skift farve ved hover */
-}
 
-/* Base styles for nav links */
-.header-nav .nav-links {
-    display: flex; /* Show nav links by default */
-}
-
-/* Hide the hamburger menu and off-screen menu by default */
-.ham-menu {
-    display: none; /* Hide hamburger menu by default */
-}
-
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-    /* Hide the regular navigation links on mobile */
-    .header-nav .nav-links {
-        display: none; /* Hide nav links on mobile */
-    }
-
-    /* Show the hamburger menu on mobile */
-    .ham-menu {
-        display: flex; /* Show hamburger menu */
-        flex-direction: column; /* Align spans vertically */
-    }
-
-    /* Show the off-screen menu when active */
-    .off-screen-menu.active {
-        right: 0; /* Slide in when active */
-    }
-}
-
+            .billede1 {
+                margin-left: 30%;
+                margin-top: 5%;
+                margin-right: 15%;
+                margin-bottom: 0%;
+                width: 5%;
+                height: 5%;
+            }
 
