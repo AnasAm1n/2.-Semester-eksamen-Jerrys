@@ -80,6 +80,8 @@ video {
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
+    line-height: normal;
+letter-spacing: 1.28px;
     max-width: 800px;
     margin-bottom: 15%;
     margin-top: 6%;
@@ -89,12 +91,20 @@ video {
     color: #322D27; /* En varm farve til overskriften */
     font-size: 2rem;
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 64px;
 }
 
 .top-overskrift p {
-    color: #333;
-    font-size: 1rem;
-    line-height: 2.0;
+    color: #322D27;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+line-height: normal;
+width: 1137px;
+height: 338px;
+flex-shrink: 0;
+font-family: 'roboto condensed', sans-serif;
 }
 
 
@@ -153,7 +163,7 @@ video {
     max-width: 1200px;
     padding: 0 20px;
     position: absolute;
-    bottom: -121%; /* Juster, hvor meget ned containeren skal flyttes */
+    bottom: -150%; /* Juster, hvor meget ned containeren skal flyttes */
     left: 0;
     right: 20;
     margin: 0 auto;
@@ -165,6 +175,7 @@ video {
     max-width: 40%; /* Begræns bredden af tekstsektionen */
     text-align: left;
     margin-left: 13%;
+    margin-bottom: -14%;
 
 }
 
@@ -209,6 +220,8 @@ left: 2%;
 right: 0;
 margin-left: 5%;
 
+bottom: -250%;
+
 }
 
 
@@ -228,7 +241,8 @@ margin-left: 5%;
     height: 67px;
     flex-shrink: 0;
     margin-left: 8%;
-    margin-top: 7%;
+    margin-bottom: 25%;
+    margin-top: 9%;
 }
 
 .button:hover {
