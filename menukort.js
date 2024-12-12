@@ -31,6 +31,7 @@ addButtons.forEach(button => {
 
 // Function to handle filter button clicks
 const filterButtons = document.querySelectorAll('.filter-button');
+const menuItems = document.querySelectorAll('.menu-item'); // Select all menu items
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -51,7 +52,48 @@ filterButtons.forEach(button => {
         // Get the filter type
         const filterType = button.getAttribute('data-filter');
 
-        // Implement filtering logic here
+        // Define the order for snacks, burgers, and drinks
+        const snackOrder = ['tops.png', 'pomfritter.png', 'sticks.png'];
+        const burgerOrder = ['mexican-burger.png', 'cheese-burger.png', 'grande-burger.png'];
+        const drinkOrder = ['faxekondi.png', 'pepsi.png', 'pepsimax.png'];
+
+        // Create an array to hold the filtered items
+        const filteredItems = [];
+
+        // Loop through menu items to filter and collect them
+        menuItems.forEach(item => {
+            const itemImage = item.querySelector('.menu-image').src.split('/').pop(); // Get the image filename
+
+            if (filterType === 'snacks' && snackOrder.includes(itemImage)) {
+                filteredItems.push(item); // Add matching snack items to the array
+            } else if (filterType === 'burger' && burgerOrder.includes(itemImage)) {
+                filteredItems.push(item); // Add matching burger items to the array
+            } else if (filterType === 'drinks' && drinkOrder.includes(itemImage)) {
+                filteredItems.push(item); // Add matching drink items to the array
+            }
+        });
+
+        // Clear the menu section
+        const menuSection = document.querySelector('.menu-section');
+        menuSection.innerHTML = ''; // Clear existing items
+
+        // Append filtered items first with animation
+        filteredItems.forEach(item => {
+            item.classList.remove('hidden'); // Ensure the item is visible
+            item.classList.add('show'); // Add class to show item with animation
+            menuSection.appendChild(item); // Move item to the top of the menu section
+        });
+
+        // Append remaining items that are not filtered
+        menuItems.forEach(item => {
+            if (!filteredItems.includes(item)) {
+                item.classList.remove('hidden'); // Ensure the item is visible
+                item.classList.add('show'); // Add class to show item with animation
+                menuSection.appendChild(item); // Append other items
+            }
+        });
+
+        // Log the filtering action
         console.log(`Filtering by: ${filterType}`);
     });
 });
