@@ -555,6 +555,10 @@ textarea::placeholder{
         padding: 20px;
     }
 
+    .forthsection-send h2{
+        padding-left: 40px;
+    }
+
     .form-gruppe{
         display: block;
     }
@@ -591,6 +595,7 @@ textarea::placeholder{
     .footer-container {
         flex-direction: column;
         align-items:flex-start;
+        padding-left: 40px;
     }
 
     .footer-sektion {
@@ -601,6 +606,5 @@ textarea::placeholder{
         display: flex;
         align-items: flex-start;
     }
-
 }
 
