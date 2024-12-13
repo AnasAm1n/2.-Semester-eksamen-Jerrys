@@ -78,18 +78,20 @@
             <h2>Margherita</h2>
             <p>Tomat, mozzarella, friske basilikum</p>
             <span>50 DKK</span>
-            <button class="add-button">
-                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
-            </button>
+            <div class="plus-icon">
+                <img src="images/plus-ikon.png" alt="Add" class="plus-icon-img">
+                <img src="images/plus-ikon-farvet.png" alt="Added" class="plus-icon-img hover-icon" style="display: none;">
+            </div>
         </div>
         <div class="menu-item">
             <img src="images/Napolitana.png" alt="Napolitana" class="menu-image">
             <h2>Napolitana</h2>
             <p>Tomat, ost, kapers, oliven, ansjoser</p>
             <span>95 DKK</span>
-            <button class="add-button">
-                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
-            </button>
+            <div class="plus-icon">
+                <img src="images/plus-ikon.png" alt="Add" class="plus-icon-img">
+                <img src="images/plus-ikon-farvet.png" alt="Added" class="plus-icon-img hover-icon" style="display: none;">
+            </div>
         </div>
         <div class="menu-item">
             <img src="images/mexican-burger.png" alt="Mexican burger" class="menu-image">
@@ -155,9 +157,9 @@
             </button>
         </div>
         <div class="menu-item">
-            <img src="images/pepsi.png" alt="Pepsi" class="menu-image">
-            <h2>Pepsi 0,5 l</h2>
-            <p>Klassisk, forfriskende Pepsi</p>
+            <img src="images/pepsi.png" alt="Faxe Kondi" class="menu-image">
+            <h2>Faxe Kondi 0,5 l</h2>
+            <p>Frisk og sprudlende citrusdrik</p>
             <span>25 DKK</span>
             <button class="add-button">
                 <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
@@ -173,6 +175,35 @@
             </button>
         </div>
     </main>
+
+    <div class="pizza-builder">
+        <h2>Byg din egen pizza</h2>
+        <div class="pizza-container">
+            <img src="images/margherita.png" alt="Pizza" class="pizza-base" id="pizzaBase">
+            <div class="toppings" id="toppingsContainer">
+                <img src="images/pepperoni-byg.png" alt="Pepperoni" class="topping" id="pepperoni" style="display: none;">
+                <img src="images/jalapenos-byg.png" alt="Jalapenos" class="topping" id="jalapenos" style="display: none;">
+                <img src="images/peberfrugt-byg.png" alt="Peberfrugt" class="topping" id="peberfrugt" style="display: none;">
+            </div>
+        </div>
+        <div class="price-display">
+            <p>Price: <span id="pizzaPrice">65</span> DKK</p>
+        </div>
+        <div class="topping-options">
+            <label>
+                <input type="checkbox" id="pepperoniCheckbox"> Pepperoni
+            </label>
+            <label>
+                <input type="checkbox" id="jalapenosCheckbox"> Jalapenos
+            </label>
+            <label>
+                <input type="checkbox" id="peberfrugtCheckbox"> Peberfrugt
+            </label>
+        </div>
+        <div class="add-to-cart">
+            <button class="add-button">Tilføj pizza til kurv</button>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
