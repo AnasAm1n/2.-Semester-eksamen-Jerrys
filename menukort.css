@@ -303,7 +303,7 @@ body {
     width: 100%; /* Set the width to 100% of the container */
     max-width: 300px; /* Set a maximum width for the items */
     height: 400px; /* Set a fixed height for the items */
-    margin: 10px auto; /* Center the items with margin */
+    margin: 20px auto; /* Center the items with margin and add vertical space */
     opacity: 1; /* Always visible */
     transform: translateY(20px); /* Start slightly below */
     transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition for opacity and transform */
@@ -414,3 +414,141 @@ body {
     vertical-align: middle; /* Align with text */
     margin-left: 10px; /* Increased space between text and icon */
 }
+
+/* Styles for specific drink images */
+.menu-item img[src*="faxekondi.png"],
+.menu-item img[src*="pepsi.png"],
+.menu-item img[src*="pepsimax.png"] {
+    width: 130px; /* Set a smaller width for the drink images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners for a softer look */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Optional: Add a hover effect for drink images */
+.menu-item img[src*="faxekondi.png"]:hover,
+.menu-item img[src*="pepsi.png"]:hover,
+.menu-item img[src*="pepsimax.png"]:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Main content should grow to fill available space */
+.main-content {
+    flex: 1; /* Allow the main content to grow */
+    padding-bottom: 100px; /* Space above the footer */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #A7927F; /* Match footer background color */
+    color: #322D27; /* Footer text color */
+    padding: 20px 0; /* Padding for footer */
+    text-align: center; /* Center footer text */
+    position: relative; /* Ensure footer is positioned correctly */
+}
+
+.pizza-builder {
+    text-align: center;
+    margin: 350px 0; /* Add margin for spacing */
+}
+
+.pizza-container {
+    position: relative;
+    display: inline-block;
+}
+
+.pizza-base {
+    width: 700px; /* Adjust size as needed */
+}
+
+.topping {
+    position: absolute; /* Position toppings absolutely */
+    width: 350px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: none; /* Initially hidden */
+}
+
+.topping-options {
+    margin-top: 20px;
+}
+
+.price-display {
+    font-size: 35px; /* Adjust font size for price */
+    margin: 10px 0; /* Space above and below the price */
+}
+
+.topping-options {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the options */
+    gap: 30px; /* Increase space between options */
+}
+
+.topping-options label {
+    font-size: 20px; /* Increase font size for labels */
+    padding: 20px; /* Add padding for larger clickable area */
+}
+
+.topping-options input[type="checkbox"] {
+    transform: scale(1.8); /* Make checkboxes larger */
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* Animation effect when price changes */
+.price-change {
+    color: #FF5733; /* Change color to indicate price change */
+    transform: scale(1.2); /* Slightly enlarge the price */
+}
+
+.pizza-builder h2 {
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+    font-size: 36px; /* Adjust the size as needed */
+    padding: 15px; /* Padding around the text */
+    background-color: #E5D8C8; /* Background color */
+    border: 0.5px solid #322D27; /* Border width */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Center the text */
+    width: fit-content; /* Adjust width to fit the content */
+    margin: 0 auto 30px; /* Center the heading and add space below */
+}
+
+.add-button-container {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Space above and below the button */
+}
+
+.add-button {
+    font-size: 20px; /* Adjust font size for the button */
+    padding: 10px 20px; /* Add padding for a larger button */
+
+ 
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    color: #ffffff; /* Change text color here */
+    font-family: 'Roboto condensed', sans-serif; /* Apply Oswald font */
+    margin-top: ;
+}
+
+
+
+.plus-icon {
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Ensure positioning context */
+}
+
+.plus-icon-img {
+    width: 20px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Show the hover icon on hover */
+.plus-icon:hover .plus-icon-img:first-child {
+    display: none; /* Hide the default plus icon */
+}
+
+.plus-icon:hover .plus-icon-img:last-child {
+    display: block; /* Show the hover icon */
+}
+
+

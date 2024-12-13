@@ -97,6 +97,93 @@ filterButtons.forEach(button => {
         console.log(`Filtering by: ${filterType}`);
     });
 });
-
 // Function to handle other functionalities (if any)
 // Add your existing code here
+
+// Function to update pizza toppings and price based on checkbox selection
+function updatePizza() {
+    const pepperoniCheckbox = document.getElementById('pepperoniCheckbox');
+    const jalapenosCheckbox = document.getElementById('jalapenosCheckbox');
+    const peberfrugtCheckbox = document.getElementById('peberfrugtCheckbox');
+
+    const pepperoni = document.getElementById('pepperoni');
+    const jalapenos = document.getElementById('jalapenos');
+    const peberfrugt = document.getElementById('peberfrugt');
+
+    // Define specific positions for each topping in the center of the pizza
+    const positions = {
+        pepperoni: { left: '25%', top: '20%' },
+        jalapenos: { left: '25%', top: '20%' },
+        peberfrugt: { left: '25%', top: '20%' }
+    };
+
+    // Initialize price
+    let price = 65; // Base price
+
+    // Show or hide toppings based on checkbox state
+    if (pepperoniCheckbox.checked) {
+        pepperoni.style.display = 'block';
+        pepperoni.style.left = positions.pepperoni.left;
+        pepperoni.style.top = positions.pepperoni.top;
+        price += 5; // Increase price for each topping
+    } else {
+        pepperoni.style.display = 'none';
+    }
+
+    if (jalapenosCheckbox.checked) {
+        jalapenos.style.display = 'block';
+        jalapenos.style.left = positions.jalapenos.left;
+        jalapenos.style.top = positions.jalapenos.top;
+        price += 5; // Increase price for each topping
+    } else {
+        jalapenos.style.display = 'none';
+    }
+
+    if (peberfrugtCheckbox.checked) {
+        peberfrugt.style.display = 'block';
+        peberfrugt.style.left = positions.peberfrugt.left;
+        peberfrugt.style.top = positions.peberfrugt.top;
+        price += 5; // Increase price for each topping
+    } else {
+        peberfrugt.style.display = 'none';
+    }
+
+    // Update the price display
+    const priceDisplay = document.getElementById('pizzaPrice');
+    priceDisplay.innerText = price;
+
+    // Add animation class
+    priceDisplay.classList.add('price-change');
+
+    // Remove animation class after animation duration
+    setTimeout(() => {
+        priceDisplay.classList.remove('price-change');
+    }, 300); // Match this duration with the CSS transition duration
+}
+
+// Add event listeners to checkboxes
+document.getElementById('pepperoniCheckbox').addEventListener('change', updatePizza);
+document.getElementById('jalapenosCheckbox').addEventListener('change', updatePizza);
+document.getElementById('peberfrugtCheckbox').addEventListener('change', updatePizza);
+
+// Function to update the visibility of toppings based on checkbox state
+function updateToppings() {
+    const pepperoniCheckbox = document.getElementById('pepperoniCheckbox');
+    const jalapenosCheckbox = document.getElementById('jalapenosCheckbox');
+    const peberfrugtCheckbox = document.getElementById('peberfrugtCheckbox');
+
+    const pepperoni = document.getElementById('pepperoni');
+    const jalapenos = document.getElementById('jalapenos');
+    const peberfrugt = document.getElementById('peberfrugt');
+
+    // Show or hide toppings based on checkbox state
+    pepperoni.style.display = pepperoniCheckbox.checked ? 'block' : 'none';
+    jalapenos.style.display = jalapenosCheckbox.checked ? 'block' : 'none';
+    peberfrugt.style.display = peberfrugtCheckbox.checked ? 'block' : 'none';
+}
+
+// Add event listeners to checkboxes
+document.getElementById('pepperoniCheckbox').addEventListener('change', updateToppings);
+document.getElementById('jalapenosCheckbox').addEventListener('change', updateToppings);
+document.getElementById('peberfrugtCheckbox').addEventListener('change', updateToppings);
+
