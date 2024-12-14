@@ -192,6 +192,10 @@ h1{
     margin-right: 80px;
 }
 
+.contact-info{
+    width: 90%;
+}
+
 .contact-info h2{
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
@@ -261,6 +265,10 @@ h1{
 
 .info-sec h2{
     padding-left: 160px;
+}
+
+.tiders-sec{
+    width: 50%;
 }
 
 /*Adresse-Map-box*/
@@ -385,6 +393,11 @@ textarea::placeholder{
     background: #5A4F46;
 }
 
+#feedback{
+    margin-left:100px;
+    margin-right: 100px;
+}
+
 /*FOOTER*/
 .footer{
     background-color: #A7927F;
@@ -502,6 +515,76 @@ textarea::placeholder{
     line-height: normal;
 }
 
+
+@media (max-width: 1980px) and (min-width: 1082px) {
+    #feedback{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1080px) and (min-width:770px){
+    .firstsection-contact {
+        gap: 20px;
+    }
+
+    /*.contact-info{
+        padding-right: 40px;
+    }*/
+
+    .contact-info p{
+        padding-right: 0px;
+    }
+    
+    #pizza-billedet{
+        width: 75%;
+        margin-right: 0px;
+    }
+
+    .secondsection-info {
+        gap: 50px;
+    }
+
+    .tiders-sec h2, .tiders-sec p{
+        padding-right: 80px;
+    }
+
+    .info-sec h2, .info-sec p {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .thirdsection-adress {
+        gap:40px;
+    }
+
+    .adresse-tekst h2,
+    .adresse-tekst p {
+        padding-right: 40px;
+    }
+
+    iframe{
+        width:75%;
+    }
+    
+    .forthsection-send {
+        padding: 40px 20px;
+    }
+
+    .form{
+        width: 90%;
+    }
+
+    #fornavn, #efternavn, #emne, #mail{
+        width: 100%;
+    }
+
+    #besked{    
+        height: 170px;
+    }
+
+
+}
+
 @media (max-width: 768px) {
     main{
         padding:0;
@@ -537,6 +620,9 @@ textarea::placeholder{
         gap: 20px;
     }
 
+    .tiders-sec {
+        width: 100%;
+    }
     .tiders-sec h2, .tiders-sec p{
         text-align: center;
     }
@@ -606,6 +692,13 @@ textarea::placeholder{
         height: 70px;
         font-size: 30px;
     }
+
+    
+    #feedback{
+        text-align: center;
+        width: 90%;
+    }
+
 
     .footer-container {
         flex-direction: column;
