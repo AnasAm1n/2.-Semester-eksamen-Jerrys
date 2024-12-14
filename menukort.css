@@ -320,13 +320,13 @@ body {
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: rounded corners for images */
     margin-bottom: 10px; /* Space between image and text */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, box-shadow 0.5s ease; Smooth transition
 }
 
 /* Hover effect for images */
 .menu-image:hover {
     transform: scale(1.05); /* Slightly enlarge the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); Add shadow on hover
 }
 
 .menu-item h2 {

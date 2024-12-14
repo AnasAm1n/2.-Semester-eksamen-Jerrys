@@ -4,7 +4,7 @@ const menuImages = document.querySelectorAll('.menu-image');
 menuImages.forEach(image => {
     image.addEventListener('mouseenter', () => {
         image.style.transform = 'scale(1.1)'; // Scale up the image
-        image.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'; // Add shadow
+        image.style.boxShadow = '0 0px 0px rgba(0, 0, 0, 0.3)'; // Add shadow
     });
 
     image.addEventListener('mouseleave', () => {
