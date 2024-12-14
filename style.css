@@ -81,7 +81,7 @@ video {
     padding: 20px;
     border-radius: 8px;
     line-height: normal;
-letter-spacing: 1.28px;
+    letter-spacing: 1.28px;
     max-width: 800px;
     margin-bottom: 15%;
     margin-top: 6%;
@@ -100,12 +100,243 @@ letter-spacing: 1.28px;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
-line-height: normal;
-width: 1137px;
-height: 338px;
-flex-shrink: 0;
-font-family: 'roboto condensed', sans-serif;
+    line-height: normal;
+    width: 1137px;
+    height: 338px;
+    flex-shrink: 0;
+    font-family: 'roboto condensed', sans-serif;
+    text-align: left
 }
+
+/* Til skærme mindre end 1200px */
+@media (max-width: 1200px) {
+    .top-overskrift h2 {
+        font-size: 48px;
+    }
+
+    .top-overskrift p {
+        font-size: 30px;
+        width: 900px;
+        height: auto;
+    }
+}
+
+/* Til skærme mindre end 768px */
+@media (max-width: 768px) {
+    .top-overskrift h2 {
+        font-size: 36px;
+    }
+
+    .top-overskrift p {
+        font-size: 24px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .overskrift {
+        margin-bottom: 10%;
+        margin-top: 4%;
+    }
+}
+
+/* Til mobilskærme */
+@media (max-width: 480px) {
+    .top-overskrift h2 {
+        font-size: 28px;
+    }
+
+    .top-overskrift p {
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .overskrift {
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+}
+
+
+
+/* Container styling */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Afstand mellem tekst og billede */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: absolute;
+    bottom: -150%; /* Juster, hvor meget ned containeren skal flyttes */
+    left: 0;
+    right: 20;
+    margin: 0 auto;
+}
+
+/* Tekstindhold 1996*/
+.text-content {
+    flex: 1; /* Fyld pladsen proportionalt */
+    max-width: 40%; /* Begræns bredden af tekstsektionen */
+    text-align: left;
+    margin-left: 13%;
+    margin-left: 9%;
+    margin-bottom: -15%;
+
+}
+
+.text-content h2 {
+    font-family: 'oswald', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 13%;
+}
+
+.text-content p {
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 900;
+    margin-left: 7%;
+}
+
+/*teksten over hover knappen*/
+
+.container-text{
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 2rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.text-p{
+    color: #322D27;
+font-family: "Roboto Condensed";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 35%;
+position: absolute;
+bottom: -180%;
+left: 2%;
+right: 0;
+margin-left: 5%;
+bottom: -260%;
+
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #322D27; /* Mørk baggrund */
+    font-family: 'roboto condensed', sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 26px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    width: 275px;
+    height: 67px;
+    flex-shrink: 0;
+    margin-left: 8%;
+    margin-bottom: 35%;
+    margin-top: 9%;
+}
+
+.button:hover {
+    background-color: #5A4F46;
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+/* Responsiv styling */
+
+/* Skærme bredere end 1200px */
+@media (max-width: 1200px) {
+    .content-container {
+        max-width: 1000px;
+        padding: 0 15px;
+    }
+
+    .text-content {
+        max-width: 50%;
+        margin-left: 5%;
+    }
+
+    .button {
+        width: 250px;
+        height: 60px;
+        margin-left: 5%;
+    }
+}
+
+/* Tablets (768px - 1200px) */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .text-content {
+        max-width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Smartphones (op til 480px) */
+@media (max-width: 480px) {
+    .content-container {
+        padding: 0 10px;
+        bottom: auto; /* Flyt containeren op */
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .text-content h2, .text-content p {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .text-p {
+        font-size: 16px;
+        bottom: -200%; /* Juster placeringen */
+    }
+}
+
+
+
+
+
 
 
 
@@ -153,106 +384,48 @@ font-family: 'roboto condensed', sans-serif;
 
 
 
-/* Container styling */
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px; /* Afstand mellem tekst og billede */
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    position: absolute;
-    bottom: -150%; /* Juster, hvor meget ned containeren skal flyttes */
-    left: 0;
-    right: 20;
-    margin: 0 auto;
+
+/* Til skærme mindre end 768px */
+@media (max-width: 768px) {
+    .image-container img {
+        display: none; /* Skjul billedet på mindre skærme */
+    }
+
+    .overlay {
+        right: 10%; /* Justér overlay position */
+        width: 150px; /* Justér overlay bredde */
+    }
+
+    .overlay h3 {
+        font-size: 1.5rem; /* Justér tekststørrelse */
+    }
+
+    .overlay p {
+        font-size: 1rem; /* Justér tekststørrelse */
+    }
 }
 
-/* Tekstindhold */
-.text-content {
-    flex: 1; /* Fyld pladsen proportionalt */
-    max-width: 40%; /* Begræns bredden af tekstsektionen */
-    text-align: left;
-    margin-left: 13%;
-    margin-bottom: -14%;
+/* Til mobilskærme mindre end 480px */
+@media (max-width: 480px) {
+    .image-container img {
+        display: none; /* Skjul billedet på mobilskærme */
+    }
 
+    .overlay {
+        left: 10%; /* Justér overlay position */
+        width: 290px; /* Justér overlay bredde */
+       
+    }
+
+    .overlay h3 {
+        font-size: 1.2rem; /* Justér tekststørrelse */
+    }
+
+    .overlay p {
+        font-size: 1.5rem; /* Justér tekststørrelse */
+    }
 }
 
-.text-content h2 {
-    font-family: 'roboto condensed', sans-serif;
-    font-weight: 200;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    margin-left: 13%;
-}
-
-.text-content p {
-    font-family: 'roboto condensed', sans-serif;
-    font-size: 2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    font-weight: 900;
-    margin-left: 7%;
-}
-
-
-
-.container-text{
-    font-family: 'roboto condensed', sans-serif;
-    font-size: 2rem;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    font-weight: 200;
-}
-
-.text-p{
-    color: #322D27;
-font-family: "Roboto Condensed";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-right: 35%;
-position: absolute;
-bottom: -180%;
-left: 2%;
-right: 0;
-margin-left: 5%;
-
-bottom: -250%;
-
-}
-
-
-.button {
-    display: inline-block;
-    background-color: #322D27; /* Mørk baggrund */
-    font-family: 'roboto condensed', sans-serif;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 26px;
-    border: none;
-    border-radius: 13px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-    width: 275px;
-    height: 67px;
-    flex-shrink: 0;
-    margin-left: 8%;
-    margin-bottom: 25%;
-    margin-top: 9%;
-}
-
-.button:hover {
-    background-color: #5A4F46;
-    font-family: 'roboto condensed', sans-serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
 
 
 
