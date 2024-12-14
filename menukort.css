@@ -421,7 +421,7 @@ body {
 .menu-item img[src*="pepsimax.png"] {
     width: 130px; /* Set a smaller width for the drink images */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: add rounded corners for a softer look */
+    border-radius: px; /* Optional: add rounded corners for a softer look */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -470,6 +470,7 @@ body {
 
 .topping-options {
     margin-top: 20px;
+ 
 }
 
 .price-display {
