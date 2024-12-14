@@ -13,8 +13,6 @@ form.addEventListener('submit', function(event) {
     feedback.style.fontFamily = "Roboto Mono, monospace";
     feedback.style.fontSize = "24px";
     feedback.style.marginTop = "20px";
-    feedback.style.marginLeft = "100px";
-    feedback.style.marginRight = "100px";
 
 
     // Opret CTA-knap
