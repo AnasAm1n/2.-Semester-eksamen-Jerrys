@@ -294,7 +294,7 @@ body {
 .menu-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 30px; /* Increased gap between items */
+    gap: 100px 30px; /* Increased gap between items (30px for columns, 20px for rows) */
     padding: 20px;
 }
 
