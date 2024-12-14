@@ -8,13 +8,11 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Tilføj feedback-beskeden
-    feedback.textContent = "Tak for din besked💌! Vi har sendt den videre til vores bedste kok 👨‍🍳- nej, vent, til kontoret😉. Vi vender snart tilbage!🍕🍹I mellemtiden kan du tjekke vores nyeste menu på hjemmesiden!🍔🍟";
+    feedback.textContent = "Tak for din besked! Vi har sendt den videre til vores bedste kok - nej, vent, til kontoret. Vi vender snart tilbage! I mellemtiden kan du tjekke vores nyeste menu på hjemmesiden!🍕";
     feedback.style.color = "#322D27"; // Tilpas farven
     feedback.style.fontFamily = "Roboto Mono, monospace";
     feedback.style.fontSize = "24px";
     feedback.style.marginTop = "20px";
-    feedback.style.marginLeft = "100px";
-    feedback.style.marginRight = "100px";
 
 
     // Opret CTA-knap

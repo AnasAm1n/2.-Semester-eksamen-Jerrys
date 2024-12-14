@@ -66,7 +66,7 @@
     <main class="menu-section">
         <div class="menu-item">
             <img src="images/pepperoni.png" alt="Pepperoni" class="menu-image">
-            <h2>Pepperoni <img src="images/star-icon.png" alt="Star" class="star-icon"></h2>
+            <h2>Pepperoni <img src="images/stjene-ikon.png" alt="Star" class="star-icon"></h2>
             <p>Tomat, ost, pepperoni</p>
             <span>85 DKK</span>
             <button class="add-button">
@@ -74,19 +74,19 @@
             </button>
         </div>
         <div class="menu-item">
-            <img src="images/margherita.png" alt="Margherita" class="menu-image">
-            <h2>Margherita</h2>
-            <p>Tomat, mozzarella, friske basilikum</p>
+            <img src="images/margherita.png" alt="Mexican burger" class="menu-image">
+            <h2>Magherita</h2>
+            <p>Tomat, mozzarella, friske basilikum.</p>
             <span>50 DKK</span>
             <button class="add-button">
                 <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
             </button>
         </div>
         <div class="menu-item">
-            <img src="images/Napolitana.png" alt="Napolitana" class="menu-image">
+            <img src="images/Napolitana.png" alt="Mexican burger" class="menu-image">
             <h2>Napolitana</h2>
-            <p>Tomat, ost, kapers, oliven, ansjoser</p>
-            <span>95 DKK</span>
+            <p>Tomat, ost, kapers, oliven, ansjoser.</p>
+            <span>50 DKK</span>
             <button class="add-button">
                 <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
             </button>
@@ -155,9 +155,9 @@
             </button>
         </div>
         <div class="menu-item">
-            <img src="images/pepsi.png" alt="Pepsi" class="menu-image">
-            <h2>Pepsi 0,5 l</h2>
-            <p>Klassisk, forfriskende Pepsi</p>
+            <img src="images/pepsi.png" alt="Faxe Kondi" class="menu-image">
+            <h2>Faxe Kondi 0,5 l</h2>
+            <p>Frisk og sprudlende citrusdrik</p>
             <span>25 DKK</span>
             <button class="add-button">
                 <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
@@ -173,6 +173,33 @@
             </button>
         </div>
     </main>
+
+    <div class="pizza-builder">
+        <h2>Byg din egen pizza</h2>
+        <div class="pizza-container">
+            <img src="images/margherita.png" alt="Pizza" class="pizza-base" id="pizzaBase">
+            <div class="toppings" id="toppingsContainer">
+                <img src="images/pepperoni-byg.png" alt="Pepperoni" class="topping" id="pepperoni" style="display: none;">
+                <img src="images/jalapenos-byg.png" alt="Jalapenos" class="topping" id="jalapenos" style="display: none;">
+                <img src="images/peberfrugt-byg.png" alt="Peberfrugt" class="topping" id="peberfrugt" style="display: none;">
+            </div>
+        </div>
+        <div class="price-display">
+            <p>Pris: <span id="pizzaPrice">65</span> DKK</p>
+        </div>
+        <div class="topping-options">
+            <label>
+                <input type="checkbox" id="pepperoniCheckbox"> Pepperoni
+            </label>
+            <label>
+                <input type="checkbox" id="jalapenosCheckbox"> Jalapenos
+            </label>
+            <label>
+                <input type="checkbox" id="peberfrugtCheckbox"> Peberfrugt
+            </label>
+         
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
