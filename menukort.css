@@ -39,6 +39,21 @@ header {
     color: #5A4F46; /* Orange hover */
 }
 
+.error-message {
+    font-family: 'Oswald', sans-serif;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: hidden; /* Initially hidden */
+}
+
 /* Logo styling */
 .logo img {
     max-height: 130px; /* Juster logoets størrelse */
@@ -320,7 +335,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: rounded corners for images */
     margin-bottom: 10px; /* Space between image and text */
-    transition: transform 0.3s ease, box-shadow 0.5s ease; Smooth transition
+    transition: transform 0.3s ease, box-shadow 0.5s ease; 
 }
 
 /* Hover effect for images */
@@ -484,9 +499,11 @@ body {
     gap: 30px; /* Increase space between options */
 }
 
+
 .topping-options label {
-    font-size: 20px; /* Increase font size for labels */
-    padding: 20px; /* Add padding for larger clickable area */
+    font-size: 16px; /* Reducer skriftstørrelsen for labels */
+    padding: 10px; /* Reducer padding for labels */
+    cursor: pointer; /* Gør labels klikbare */
 }
 
 .topping-options input[type="checkbox"] {
@@ -521,6 +538,8 @@ body {
     font-size: 20px; /* Adjust font size for the button */
     padding: 10px 20px; /* Add padding for a larger button */
 
+    
+
  
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Change cursor to pointer */
@@ -528,6 +547,21 @@ body {
     color: #ffffff; /* Change text color here */
     font-family: 'Roboto condensed', sans-serif; /* Apply Oswald font */
     margin-top: ;
+}
+
+/* Skub pizza add-knappen lidt op */
+.pizza-add-button {
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px; /* Ryk til højre */
+    margin-top: 0px; /* Skub knappen lidt op (justér værdien som ønsket) */
+}
+
+.pizza-add-button img.icon {
+    width: 30px;  /* Juster til ønsket størrelse */
+    height: 30px; /* Juster til ønsket størrelse */
 }
 
 
@@ -553,3 +587,171 @@ body {
 }
 
 
+
+
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    /* Hide the regular navigation links on mobile */
+    .header-nav .nav-links {
+        display: none;
+    }
+
+    /* Show the hamburger menu on mobile */
+    .ham-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Show the off-screen menu when active */
+    .off-screen-menu.active {
+        right: 0;
+    }
+
+    /* Adjust navigation layout */
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    /* Adjust footer layout */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Bedre afstand mellem sektioner */
+    }
+
+    .footer-sektion {
+        margin-bottom: 20px;
+        text-align: center; /* Centreret tekst på mindre skærme */
+    }
+
+    /* Menu items on smaller screens */
+    .menu-section {
+        grid-template-columns: 1fr; /* Enkelt kolonne */
+        gap: 30px 20px; /* Mindre afstand mellem menupunkter */
+    }
+
+    .menu-item {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust logo size */
+    .logo img {
+        max-height: 70px; /* Mindre logo for bedre plads */
+    }
+
+    /* Footer font and icon sizes */
+    .footer-sektion h1 {
+        font-size: 18px; /* Mindre fontstørrelse for at passe til mindre skærme */
+    }
+
+    .some-ikoner-box {
+        gap: 8px; /* Mindre mellemrum mellem sociale ikoner */
+    }
+
+    .social-ikoner a img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Adjust text and icon sizes */
+    .tlf, .mail, .lokation-ikon-tekst, .adresse-sektion a {
+        font-size: 13px; /* Mindre tekst for kompakt layout */
+    }
+
+    /* Smaller font for footer bottom text */
+    .Footer-bottom {
+        font-size: 9px;
+        margin-top: 10px; /* Lidt ekstra plads over teksten */
+    }
+
+    /* Pizza builder section adjustments */
+    .pizza-builder {
+        margin: 80px 0; /* Mindre margin for kompakt visning */
+    }
+
+    .pizza-base {
+        width: 100%;
+        max-width: 350px; /* Reduceret bredde */
+    }
+
+    .topping {
+        width: 180px; /* Mindre toppings for bedre pasform */
+    }
+
+    .topping-options label {
+        font-size: 15px; /* Let reduceret font for bedre pasform */
+    }
+
+    .topping-options input[type="checkbox"] {
+        transform: scale(1.3); /* Lidt mindre checkbox-skala */
+    }
+
+    .price-display {
+        font-size: 22px; /* Lidt mindre prisskærm for bedre tilpasning */
+    }
+
+    /* Knapper og input */
+    .add-button {
+        background-color: #A7927F; /* Farvet baggrund for bedre synlighed */
+        padding: 10px 20px; /* Større klikområde */
+        border-radius: 5px;
+    }
+
+    .add-button:hover .icon {
+        content: url(images/Plus-ikon-farvet.png);
+        transform: scale(1.1); /* Lidt større på hover */
+    }
+
+    .add-button:hover {
+        background-color: #5A4F46; /* Ændret baggrundsfarve på hover */
+    }
+
+    /* Menu Section Styles */
+    .menu-section {
+        padding: 10px; /* Mindre polstring */
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 10px auto;
+        opacity: 1;
+        transform: translateY(10px); /* Mindre animation */
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .menu-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease, box-shadow 0.5s ease;
+    }
+
+    .menu-image:hover {
+        transform: scale(1.03); /* Lidt mindre forstørrelse på hover */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Title and description adjustments */
+    .menu-item h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        margin: 10px 0;
+        margin-left: 10px;
+    }
+
+    .menu-item p,
+    .menu-item span {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 15px; /* Let reduceret fontstørrelse */
+        font-weight: 400;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -27,6 +27,20 @@ addButtons.forEach(button => {
     button.addEventListener('mouseleave', () => {
         icon.src = 'images/plus-ikon.png'; // Change back to plus icon
     });
+
+    // Function to handle add button click and show error message
+    button.addEventListener('click', () => {
+        // Get the error message container
+        const errorMessage = document.getElementById('error-message');
+        
+        // Show the error message
+        errorMessage.style.display = 'block';
+
+        // Optionally, hide it after a few seconds (if you want to auto-hide the error message after a delay)
+        setTimeout(() => {
+            errorMessage.style.display = 'none';
+        }, 3000); // Error message disappears after 3 seconds
+    });
 });
 
 // Function to handle filter button clicks
@@ -97,8 +111,6 @@ filterButtons.forEach(button => {
         console.log(`Filtering by: ${filterType}`);
     });
 });
-// Function to handle other functionalities (if any)
-// Add your existing code here
 
 // Function to update pizza toppings and price based on checkbox selection
 function updatePizza() {
@@ -186,4 +198,3 @@ function updateToppings() {
 document.getElementById('pepperoniCheckbox').addEventListener('change', updateToppings);
 document.getElementById('jalapenosCheckbox').addEventListener('change', updateToppings);
 document.getElementById('peberfrugtCheckbox').addEventListener('change', updateToppings);
-

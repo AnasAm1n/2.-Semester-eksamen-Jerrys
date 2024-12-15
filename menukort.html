@@ -47,6 +47,9 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>  
         </nav>
+        <div id="error-message" class="error-message" style="display: none;">
+            Du kan ikke tilføje dette element til din bestilling..
+        </div>
         <div class="filter-container">
             <button class="filter-button" data-filter="snacks">
                 <img src="images/snacks-filter.png" alt="Snacks" class="filter-icon" data-icon="images/snacks-filter.png" data-active="images/snacks-filter-farvet.png">
@@ -174,6 +177,7 @@
         </div>
     </main>
 
+   
     <div class="pizza-builder">
         <h2>Byg din egen pizza</h2>
         <div class="pizza-container">
@@ -197,7 +201,9 @@
             <label>
                 <input type="checkbox" id="peberfrugtCheckbox"> Peberfrugt
             </label>
-         
+            <button class="add-button pizza-add-button">
+                <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
+            </button>
         </div>
     </div>
 
