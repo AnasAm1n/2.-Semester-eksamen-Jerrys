@@ -801,3 +801,5 @@ Media query for mobile screens
 
 }
 
+
+@media only screen and (max-width: 1024px) {

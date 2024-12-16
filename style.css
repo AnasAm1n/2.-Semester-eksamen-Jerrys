@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
@@ -495,8 +497,17 @@ bottom: -260%;
     display: none; /* Hide hamburger menu by default */
 }
 
+
+
+
+
+
+
+
+
 /* Til små og mellemstore mobilskærme */
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1024px) {
     /* Top-overskrift */
     .top-overskrift h2 {
         font-size: 35; /* Tilpasset mindre telefoner */
@@ -592,8 +603,8 @@ bottom: -260%;
 
     .overlay {
         margin-top: 150px;
-        padding: 50px;
-      margin-right: -16px;
+        padding: 1px;
+      margin-right: -65px;
     }
 
     .overlay h3 {
@@ -701,4 +712,5 @@ bottom: -260%;
         margin: 10px auto;
     }
 }
+
 
