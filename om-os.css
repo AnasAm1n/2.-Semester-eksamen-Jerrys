@@ -256,7 +256,7 @@ margin-bottom: 20px;
 }
 
 .stars .empty {
-    color: #D9D9D9;
+    color: #ffffff;
 }
 
 .stars .empty:hover {
@@ -296,9 +296,6 @@ margin-bottom: 20px;
 .jerrys2 img {
     margin-left: 20px;
 }
-
-
-
 
 
 
@@ -351,7 +348,7 @@ margin-bottom: 20px;
     }
 
     .stars {
-        font-size: 16px; 
+        font-size: 20px; 
     }
 }
 
