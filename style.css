@@ -181,7 +181,7 @@ bottom: -180%;
 left: 2%;
 right: 0;
 margin-left: 5%;
-bottom: -260%;
+bottom: -220%;
 
 }
 
@@ -225,7 +225,7 @@ bottom: -260%;
 }
 
 .image-container img {
-    margin-left: 65%;
+    margin-left: 60%;
     width: 80%;
     height: auto;
     border-radius: 0px; /* Afrundede hjørner */
@@ -702,7 +702,7 @@ bottom: -260%;
     /* Image container adjustments */
     .image-container img {
         width: 100%; /* Ensures image fits well on narrow screens */
-        display: block; /* Show image on mobile */
+        display: hidden; /* Show image on mobile */
     }
 
     /* Overlay box */
@@ -714,3 +714,126 @@ bottom: -260%;
 }
 
 
+
+/* Responsiv styling */
+@media screen and (max-width: 1600px) {
+    .top-overskrift h2 {
+        font-size: 48px; /* Mindre overskrift */
+    }
+
+    .top-overskrift p {
+        font-size: 28px; /* Mindre tekst */
+        max-width: 900px; /* Begræns bredde */
+    }
+
+    .overskrift {
+        margin-bottom: 10%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .top-overskrift h2 {
+        font-size: 36px; /* Endnu mindre overskrift */
+    }
+
+    .top-overskrift p {
+        font-size: 24px; /* Mindre tekststørrelse */
+        max-width: 700px;
+    }
+
+    .overskrift {
+        margin-bottom: 8%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top-overskrift h2 {
+        font-size: 28px;
+    }
+
+    .top-overskrift p {
+        font-size: 20px;
+        max-width: 600px;
+    }
+
+    .overskrift {
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+}
+/* Responsiv styling */
+@media screen and (max-width: 1600px) {
+    .text-content {
+        max-width: 50%;
+        margin-left: 7%;
+        margin-bottom: 20%;
+    }
+
+    .text-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .text-content p {
+        font-size: 1.8rem;
+    }
+
+    .image-container img {
+        margin-left: 70%;
+        width: 70%;
+        height: auto;
+    }
+
+    .overlay {
+        right: 14%;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content-container {
+        flex-direction: column; /* Skifter til kolonne-layout */
+        bottom: auto;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .image-container img {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .overlay {
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text-content h2,
+    .text-content p,
+    .container-text {
+        font-size: 1.6rem;
+
+    }
+
+    .button {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .overlay h3 {
+        font-size: 1.6rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}
