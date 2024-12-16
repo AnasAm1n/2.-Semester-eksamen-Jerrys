@@ -59,15 +59,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Tilføj lidt indvendig margen */
+    padding: 2px; /* Tilføj lidt indvendig margen */
     
 }
 video {
-    margin-top: -2%;
-    max-width: 103%; /* Begræns den maksimale bredde */
+    margin-top: -9%;
+    max-width: 101%; /* Begræns den maksimale bredde */
     height: auto;
     aspect-ratio: 16/9; /* Bevarer videoens proportioner */
-    border: 1px solid #aeaaaa; /* Tilføj en kant for at se ændringerne tydeligere */
 }
 
 
@@ -86,7 +85,7 @@ video {
     letter-spacing: 1.28px;
     max-width: 800px;
     margin-bottom: 15%;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 
 .top-overskrift h2 {
@@ -728,7 +727,7 @@ bottom: -220%;
 
     .overskrift {
         margin-bottom: 10%;
-        margin-top: 4%;
+        margin-top: -7%;
     }
 }
 
@@ -768,7 +767,7 @@ bottom: -220%;
     .text-content {
         max-width: 50%;
         margin-left: 7%;
-        margin-bottom: 20%;
+                margin-bottom: 20%;
     }
 
     .text-content h2 {
@@ -820,6 +819,7 @@ bottom: -220%;
     .text-content p,
     .container-text {
         font-size: 1.6rem;
+        
 
     }
 
