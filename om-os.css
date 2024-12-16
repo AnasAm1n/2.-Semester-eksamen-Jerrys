@@ -166,7 +166,7 @@ margin-bottom: 20px;
     text-align: center;
     position: relative;
     width: 100%;
-    background-color: #7E705F;
+    background-color: #F3EEE8;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@ margin-bottom: 20px;
 
 .review-card {
     padding: 30px 20px;
-    background-color: #DDD3CB;
+    background-color: #d8ccc3;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@ margin-bottom: 20px;
 .review-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #f0ebe7;
+    background-color: #e3dad4;
     cursor: pointer;
 }
 
@@ -290,7 +290,6 @@ margin-bottom: 20px;
     margin: 0;
     margin-left: 0;
     margin-bottom: 30px;
-    margin-right: 20%;
 }
 
 .jerrys2 img {
