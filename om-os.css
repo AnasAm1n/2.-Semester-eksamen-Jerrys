@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
-    padding: 3rem 1rem;
+    height: 250px;
+    padding: 2rem 0rem;
     margin: 0;
     text-align: center;
     color: #322D27;
     font-family: Oswald;
-    font-size: 40px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -37,18 +37,21 @@ flex-direction: column;
 gap: 2.25rem;
 max-width: 600px;
 margin: 0;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 
 .jerrys h1 {
     color: #322D27;
     font-family: Oswald;
-    font-size: 45px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.9px;
     text-align: left;
     margin: 0;
+    margin-left: 15%;
 }
 
 .jerrys h3 {
@@ -60,15 +63,78 @@ margin: 0;
     line-height: normal;
     text-align: left;
     margin: 0;
+    margin-left: 15%;
 }
+
+
+
+
+.jerrys2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 10%;
+    margin: 5% 0;
+    }
+    
+    .jerrys-text-container2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    max-width: 600px;
+    margin: 0;
+    margin-top: 20px;
+    
+    }
+.jerrys2 h1 {
+    color: #322D27;
+    font-family: Oswald;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: left;
+    margin: 0;
+    margin-left: 0;
+}
+
+.jerrys2 h3 {
+    color: #322D27;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin: 0;
+    margin-left: 0;
+}
+
+.billede2 {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 550px;
+    flex-shrink: 0;
+}
+
+
+
+
+
 
         .jerrys img {
             width: 500px;
             height: auto;
             padding: 0;
             transition: all 0.3s ease;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 20px;
         }
 
         .jerrys img:hover {
@@ -96,22 +162,23 @@ margin: 0;
             }
 
 .reviews-section {
-    padding: 4rem 0;
+    padding: 0rem;
     text-align: center;
     position: relative;
     width: 100%;
-    background-color: #A7927F;
-    min-height: 100vh;
+    background-color: #7E705F;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 0;
 }
 
 .reviews-section h1 {
-    color: white;
+    color: rgb(36, 36, 36);
     font-family: Oswald;
-    font-size: 64px;
+    font-size: 40px;
     margin-top: 4rem;
     margin-bottom: 4rem;
     text-align: center;
@@ -126,9 +193,9 @@ margin: 0;
 }
 
 .review-card {
-    padding: 60px 40px;
-    background-color: #C4B5A5;
-    border-radius: 30px;
+    padding: 30px 20px;
+    background-color: #DDD3CB;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +207,7 @@ margin: 0;
 .review-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #cec1b3;
+    background-color: #f0ebe7;
     cursor: pointer;
 }
 
@@ -151,9 +218,9 @@ margin: 0;
 }
 
 .review-card h3 {
-    color: white;
+    color: rgb(22, 22, 22);
     font-family: Oswald;
-    font-size: 48px;
+    font-size: 26px;
     margin-bottom: 2rem;
     width: 100%;
     text-align: center;
@@ -162,7 +229,7 @@ margin: 0;
 .review-card p {
     color: #322D27;
     font-family: "Roboto Condensed";
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 2rem;
     line-height: 1;
     text-align: center;
@@ -189,7 +256,7 @@ margin: 0;
 }
 
 .stars .empty {
-    color: #D9D9D9;
+    color: #ffffff;
 }
 
 .stars .empty:hover {
@@ -200,3 +267,125 @@ margin: 0;
     opacity: 1;
 }
 
+.jerrys-text-container2 h1 {
+    color: #322D27;
+    font-family: Oswald;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: left;
+    margin: 0;
+    margin-left: 0;
+}
+.jerrys-text-container2 h3 {
+    color: #322D27;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin: 0;
+    margin-left: 0;
+    margin-bottom: 30px;
+    margin-right: 20%;
+}
+
+.jerrys2 img {
+    margin-left: 20px;
+}
+
+
+
+
+
+/* Responsiv kode */
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+        .jerrys {
+            flex-direction: column; 
+            padding: 0 3%;
+            text-align: center;
+        }
+    
+        .jerrys h1 {
+            order: 1; 
+            margin-left: 0;
+        }
+    
+        .jerrys img {
+            order: 2; 
+            width: 100%; 
+            margin-bottom: 1rem; 
+        }
+    
+        .jerrys h3 {
+            order: 3; 
+            margin-left: 0;
+            margin-bottom: 1rem; 
+        }
+    
+        .jerrys-text-container {
+            max-width: 100%; 
+            margin: 0;
+            padding: 0 1rem;
+        }
+    }
+
+
+
+    .reviews-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .review-card {
+        margin-bottom: 10px; 
+        width: 85%; 
+        margin-bottom: 20%;
+    }
+
+    .stars {
+        font-size: 20px; 
+    }
+}
+
+
+.jerrys-text-container2 {
+    font-size: 16px; 
+    line-height: 1.6; 
+    padding: 0px 10px; 
+    text-align: center;
+
+
+    .footer-container {
+        flex-direction: column;
+        align-items:flex-start;
+        padding-left: 40px;
+    }
+
+    .footer-sektion {
+        margin-bottom: 50px;
+    }
+
+    .footer h1{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    h1, h3 {
+        margin: 0.5rem 0; 
+    }
+}
+/* Remove white space between reviews section and footer */
+.reviews-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer {
+    margin-top: 0;
+    padding-top: 0;
+}
