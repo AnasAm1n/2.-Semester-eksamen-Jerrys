@@ -709,139 +709,67 @@ bottom: -260%;
 /* For mobile devices, screens up to 389px wide */
 @media only screen and (max-width: 389px) {
 
-        /* Top-overskrift */
-        .top-overskrift h2 {
-            font-size: 35; /* Tilpasset mindre telefoner */
-            margin-bottom: 1px;
-            margin-top: -40px;
-        }
-    
-        .top-overskrift p {
-            font-size: 16px;
-            width: 90%; /* Mindre bredde for bedre centrering */
-          text-align: left;
-            margin-top: 5px;
-            margin-left: 25px;
-        }
-    
-        .header-nav .nav-links {
-            display: none;
-        }
-    
-        /* Show the hamburger menu on mobile */
-        .ham-menu {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        /* Show the off-screen menu when active */
-        .off-screen-menu.active {
-            right: 0;
-        }
-    
-        /* Adjust navigation layout */
-        .header-nav {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0 10px;
-        }
-    
-    
-        .overskrift {
-            margin-bottom: 4%; /* Justering for at undgå for meget plads */
-            margin-top: 10%;
-        }
-    
-        .text-p {
-            color: #322D27;
-            font-size: 20px;
-            font-family: 'Roboto Condensed', sans-serif;
-            position: absolute;
-            bottom: -300%;
-            left: 2%;
-            margin-left: 5%;
-        }
-    
-        /* Knappen */
-        .button {
-            width: 50%;
-            font-size: 1.3rem;
-            margin-left: 25%; /* Sørger for, at knappen er centreret */
-            margin-top: 50px;
-        }
-    
-        /* Tekstindhold */
-        .text-content h2 {
-            font-size: 24px;
-            margin-left: 0;
-            margin-bottom: 180px;
-            text-align: center; /* Centrer overskriften */
-        }
-    
-        .text-content p {
-            font-size: 30px; /* Mindre tekst for bedre læsbarhed */
-            margin-left: 30px;
-            width: 90%;
-            text-align: center;
-            margin-top: -150px;
-    
-        }
-    
-        .text-p {
-            position: static;
-            margin-top: -30px;
-            font-size: 15px;
-            text-align: left;
-    
-        }
-    
-        section video {
-            display: none;
-        }
-    
-        /* Overlay-tekst */
-    
-    
-        .overlay {
-            margin-top: 150px;
-            padding: 50px;
-          margin-right: -16%;
-        
-        }
-    
-        .overlay h3 {
-            font-size: 2rem; /* Mindre overskrift for mindre skærme */
-        }
-    
-        .overlay p {
-            font-size: 1.5rem;
-        }
-    
-        /* Billede */
-        .image-container img {
-            display: none; /* Skjul billede på mobil */
-        }
-    
-      
-    
-        .footer-container {
-            flex-direction: column;
-            align-items:flex-start;
-            padding-left: 40px;
-            margin-top: 50px;
-        }
-    
-        .footer-sektion {
-            margin-bottom: 20px;
-        }
-    
-        .footer h1{
-            display: flex;
-            align-items: flex-start;
-        }
-        
-        .footer {
-            margin-top: 500px;
-        }
-    
+    /* Top-overskrift */
+    .top-overskrift h2 {
+        font-size: 20px; /* Smaller font size for very narrow screens */
+    }
+
+    .top-overskrift p {
+        font-size: 14px;
+        width: 90%; /* Adjusted width for better fit */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .overskrift {
+        margin-bottom: 5%; /* Increased margin for smaller screens */
+        margin-top: 3%;
+    }
+
+    /* Button styling */
+    .button {
+        width: 80%;
+        font-size: 0.9rem; /* Smaller font size for narrow screens */
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+
+    /* Text content */
+    .text-content h2 {
+        font-size: 16px; /* Reduced font size for small screens */
+        text-align: center;
+    }
+
+    .text-content p {
+        font-size: 12px; /* Smaller text for better readability */
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Hide video on mobile */
+    section video {
+        display: none;
+    }
+
+    /* Overlay text adjustments */
+    .overlay h3 {
+        font-size: 1.4rem; /* Adjusted overlay text size */
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    /* Image container adjustments */
+    .image-container img {
+        width: 100%; /* Ensures image fits well on narrow screens */
+        display: block; /* Show image on mobile */
+    }
+
+    /* Overlay box */
+    .overlay {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto;
     }
