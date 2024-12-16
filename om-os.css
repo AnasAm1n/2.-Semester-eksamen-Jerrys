@@ -172,6 +172,7 @@ margin-bottom: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 0;
 }
 
 .reviews-section h1 {
@@ -381,4 +382,13 @@ margin-bottom: 20px;
         margin: 0.5rem 0; 
     }
 }
+/* Remove white space between reviews section and footer */
+.reviews-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
+.footer {
+    margin-top: 0;
+    padding-top: 0;
+}
