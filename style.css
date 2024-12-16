@@ -569,8 +569,7 @@ bottom: -260%;
 }
 
 /* Til små og mellemstore mobilskærme */
-@media only screen and (max-width: 1024px) {
-
+@media only screen and (max-width: 768px) {
     /* Top-overskrift */
     .top-overskrift h2 {
         font-size: 35; /* Tilpasset mindre telefoner */
@@ -707,3 +706,70 @@ bottom: -260%;
 
 }
 
+/* For mobile devices, screens up to 389px wide */
+@media only screen and (max-width: 389px) {
+
+    /* Top-overskrift */
+    .top-overskrift h2 {
+        font-size: 20px; /* Smaller font size for very narrow screens */
+    }
+
+    .top-overskrift p {
+        font-size: 14px;
+        width: 90%; /* Adjusted width for better fit */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .overskrift {
+        margin-bottom: 5%; /* Increased margin for smaller screens */
+        margin-top: 3%;
+    }
+
+    /* Button styling */
+    .button {
+        width: 80%;
+        font-size: 0.9rem; /* Smaller font size for narrow screens */
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+
+    /* Text content */
+    .text-content h2 {
+        font-size: 16px; /* Reduced font size for small screens */
+        text-align: center;
+    }
+
+    .text-content p {
+        font-size: 12px; /* Smaller text for better readability */
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Hide video on mobile */
+    section video {
+        display: none;
+    }
+
+    /* Overlay text adjustments */
+    .overlay h3 {
+        font-size: 1.4rem; /* Adjusted overlay text size */
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    /* Image container adjustments */
+    .image-container img {
+        width: 100%; /* Ensures image fits well on narrow screens */
+        display: block; /* Show image on mobile */
+    }
+
+    /* Overlay box */
+    .overlay {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto;
+    }
