@@ -137,7 +137,7 @@ video {
     text-align: left;
     margin-left: 13%;
     margin-left: 9%;
-    margin-bottom: -15%;
+    margin-top: -900px;
 
 }
 
@@ -153,7 +153,7 @@ video {
     font-family: 'roboto condensed', sans-serif;
     font-size: 2rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: -20%;
     font-weight: 900;
     margin-left: 7%;
 }
@@ -180,7 +180,7 @@ bottom: -180%;
 left: 2%;
 right: 0;
 margin-left: 5%;
-bottom: -220%;
+bottom: -200%;
 
 }
 
@@ -266,7 +266,7 @@ bottom: -220%;
     background-color: #A7927F;
     color: #322D27;
     padding: 20px 0;
-    margin-top: 40px;
+    margin-top: 300px;/*trækker footer ned*/
  /*   display: flex;
     justify-content: space-around;
     align-items: flex-start;*/
@@ -675,6 +675,7 @@ bottom: -220%;
     .text-content h2 {
         font-size: 16px; /* Reduced font size for small screens */
         text-align: center;
+       
     }
 
     .text-content p {
@@ -819,6 +820,7 @@ bottom: -220%;
     .text-content p,
     .container-text {
         font-size: 1.6rem;
+        
         
 
     }
