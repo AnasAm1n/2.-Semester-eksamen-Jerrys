@@ -108,6 +108,18 @@ video {
     text-align: left
 }
 
+/* Til skærme mindre end 1200px */
+@media (max-width: 1200px) {
+    .top-overskrift h2 {
+        font-size: 48px;
+    }
+
+    .top-overskrift p {
+        font-size: 30px;
+        width: 900px;
+        height: auto;
+    }
+}
 
 
 
@@ -136,7 +148,6 @@ video {
     margin-left: 13%;
     margin-left: 9%;
     margin-bottom: -15%;
-    color: #322D27;
 
 }
 
@@ -146,7 +157,6 @@ video {
     font-size: 2rem;
     margin-bottom: 20px;
     margin-left: 13%;
-
 }
 
 .text-content p {
@@ -169,7 +179,7 @@ video {
 }
 
 .text-p{
-    color: #000000;
+    color: #322D27;
 font-family: "Roboto Condensed";
 font-size: 20px;
 font-style: normal;
@@ -216,6 +226,40 @@ bottom: -260%;
 }
 
 
+/* Responsiv styling */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stak elementerne vertikalt */
+        gap: 10px; /* Mindre afstand mellem elementerne */
+        position: static; /* Fjern 'absolute' for små skærme */
+        margin: 20px auto; /* Centrér indholdet */
+    }
+
+    .text-content {
+        max-width: 100%; /* Gør teksten fuld bredde */
+        margin: 0 10px; /* Tilføj lidt luft på siderne */
+        text-align: left; /* Centrér teksten */
+        font-weight: 40px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .text-p {
+        position: static; /* Fjern 'absolute' placering */
+        margin: 20px 0; /* Tilføj luft omkring teksten */
+        font-size: 13px; /* Mindre skrifttype */
+        text-align:start;
+      
+    }
+
+    .button {
+        margin-left: 20%; /* Centrér knappen */
+        font-size: 1.1rem; /* Reducér størrelsen på knappen */
+        text-align: center;
+        width: 60%;
+
+    }
+}
 
 
 
@@ -268,6 +312,22 @@ bottom: -260%;
 }
 
 
+
+/* Ekstra tilpasning for telefon (under 480px) */
+@media (max-width: 480px) {
+    .overlay {
+        width: 90%; /* Fyld hele bredden */
+        padding: 8px 10px;
+    }
+
+    .overlay h3 {
+        font-size: 2.3rem; /* Reducér størrelse yderligere */
+    }
+
+    .overlay p {
+        font-size: 2.2rem;
+    }
+}
 
 
 
@@ -387,6 +447,27 @@ bottom: -260%;
     line-height: normal;
 }
 
+@media (max-width: 768px) {
+    main{
+        padding:0;
+        margin:0;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items:flex-start;
+        padding-left: 40px;
+    }
+
+    .footer-sektion {
+        margin-bottom: 20px;
+    }
+
+    .footer h1{
+        display: flex;
+        align-items: flex-start;
+    }
+}
 
 
 
@@ -486,122 +567,6 @@ bottom: -260%;
 /* Hide the hamburger menu and off-screen menu by default */
 .ham-menu {
     display: none; /* Hide hamburger menu by default */
-}
-
-
-
-/* Til skærme mellem 1024px og 1440px (bærbare skærme) */
-@media (max-width: 1440px) and (min-width: 1024px) {
-    .top-overskrift h2 {
-        font-size: 42px;
-    }
-
-    .top-overskrift p {
-        font-size: 28px;
-        width: 80%;
-    }
-
-    .text-content h2 {
-        font-size: 1.8rem;
-        margin-left: 10%;
-    }
-
-    .text-content p {
-        font-size: 1.8rem;
-        margin-left: 5%;
-    }
-
-    .button {
-        font-size: 24px;
-        width: 250px;
-        height: 60px;
-        margin-left: 7%;
-    }
-
-    .image-container img {
-        width: 75%;
-        margin-left: 60%;
-    }
-
-    .overlay h3 {
-        font-size: 1.8rem;
-    }
-
-    .text-content {
-        flex: 1;
-        max-width: 40%;
-        text-align: left;
-        margin-left: 9%;
-        margin-bottom: 25%;
-    }
-
-    .text-p {
-        color: #322D27;
-        font-size: 20px;
-        font-family: 'Roboto Condensed', sans-serif;
-        position: absolute;
-        bottom: -210%;
-        left: 2%;
-        margin-left: 5%;
-    }
-    
-
-    .overlay p {
-        font-size: 1.1rem;
-    }
-}
-
-/* Til skærme mindre end 1200px */
-@media (max-width: 1200px) {
-    .top-overskrift h2 {
-        font-size: 48px;
-    }
-
-    .top-overskrift p {
-        font-size: 30px;
-        width: 900px;
-    }
-}
-
-/* Til skærme mindre end 768px */
-@media (max-width: 768px) {
-    .top-overskrift h2 {
-        font-size: 36px;
-    }
-
-    .top-overskrift p {
-        font-size: 24px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .overskrift {
-        margin-bottom: 10%;
-        margin-top: 4%;
-    }
-
-    .content-container {
-        flex-direction: column;
-        position: static;
-        margin: 20px auto;
-    }
-
-    .text-content {
-        max-width: 100%;
-        margin: 0 10px;
-    }
-
-    .text-p {
-        position: static;
-        margin: 20px 0;
-        font-size: 13px;
-    }
-
-    .button {
-        margin-left: 20%;
-        font-size: 1.1rem;
-        width: 60%;
-    }
 }
 
 /* Til små og mellemstore mobilskærme */
@@ -741,4 +706,6 @@ bottom: -260%;
     }
 
 }
+
+
 
