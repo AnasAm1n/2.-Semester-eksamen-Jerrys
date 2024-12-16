@@ -39,6 +39,7 @@ max-width: 600px;
 margin: 0;
 margin-top: 20px;
 margin-bottom: 20px;
+margin-left: 7%;
 }
 
 .jerrys h1 {
@@ -83,11 +84,13 @@ margin-bottom: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 2.25rem;
+    gap: 1rem;
     max-width: 600px;
     margin: 0;
-    margin-top: 20px;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
     }
 .jerrys2 h1 {
     color: #322D27;
@@ -123,33 +126,61 @@ margin-bottom: 20px;
 }
 
 
+.jerrys #jerryinfo {
+    width: 50%; 
+    height: auto; 
+    max-width: none; 
+    transition: none; 
+    
+}
 
 
+#jerryinfo {
+    width: 50%; 
+    height: auto; 
+    max-width: none; 
+    transition: none; 
+}
 
+
+#jerryinfo:hover {
+    transform: none; 
+    box-shadow: none;
+    cursor: default; 
+    filter: none; 
+}
+
+
+.jerrys img:hover {
+    transform: none; 
+    box-shadow: none; 
+    cursor: default; 
+    filter: none; 
+}
 
         .jerrys img {
             width: 500px;
-            height: auto;
+            height: 550px;
             padding: 0;
-            transition: all 0.3s ease;
+            transition: none;
             border-radius: 0;
             box-shadow: none;
             margin-bottom: 20px;
         }
 
         .jerrys img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            filter: brightness(1.1);
+            transform: none;
+            box-shadow: none;
+            cursor: default;
+            filter: none;
         }
 
         #jerry:hover {
-            transform: scale(1.05) rotate(2deg);
+            transform: none;
         }
 
         #deskank:hover {
-            transform: scale(1.05) rotate(-2deg);
+            transform: none;
         }
 
 
@@ -166,7 +197,7 @@ margin-bottom: 20px;
     text-align: center;
     position: relative;
     width: 100%;
-    background-color: #7E705F;
+    background-color: #F3EEE8;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -194,7 +225,7 @@ margin-bottom: 20px;
 
 .review-card {
     padding: 30px 20px;
-    background-color: #DDD3CB;
+    background-color: #d8ccc3;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -207,7 +238,7 @@ margin-bottom: 20px;
 .review-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #f0ebe7;
+    background-color: #e3dad4;
     cursor: pointer;
 }
 
@@ -290,7 +321,6 @@ margin-bottom: 20px;
     margin: 0;
     margin-left: 0;
     margin-bottom: 30px;
-    margin-right: 20%;
 }
 
 .jerrys2 img {
@@ -379,13 +409,150 @@ margin-bottom: 20px;
         margin: 0.5rem 0; 
     }
 }
-/* Remove white space between reviews section and footer */
+
 .reviews-section {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .footer {
-    margin-top: 0;
+    margin-top: 150px;
     padding-top: 0;
+}
+
+
+.jerrys-text-container2 {
+    margin-right: 8%;
+    margin-left: 5%;
+}
+
+
+.jerrys img {
+    width: 500px; 
+    height: 550px; 
+    padding: 0;
+    transition: none; 
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 20px; 
+}
+
+
+#billede2 {
+    margin-top: 20px; 
+    margin-right: 8%;
+}
+
+.jerrys-text-container3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    max-width: 600px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+
+
+}
+
+
+@media (max-width: 768px) {
+    .jerrys #jerryinfo {
+        width: 100%; 
+        height: auto; 
+        max-width: none; 
+        transition: none; 
+        margin-bottom: 20px; 
+    }
+
+
+    #jerryinfo {
+        width: 100%; 
+        height: auto; 
+        max-width: none; 
+        transition: none; 
+        margin-bottom: 20px; 
+    }
+
+    
+    #billede2 {
+        width: 100%; 
+        height: auto; 
+        margin-top: 20px; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .herotext {
+        margin-bottom: 30px; 
+    }
+
+    .jerrys #jerryinfo {
+        width: 100%; 
+        height: auto; 
+        max-width: none; 
+        transition: none; 
+        margin-bottom: 20px; 
+    }
+
+  
+    #jerryinfo {
+        width: 100%; 
+        height: auto; 
+        max-width: none; 
+        transition: none; 
+        margin-bottom: 20px; 
+    }
+
+    
+    #billede2 {
+        width: 100%; 
+        height: auto; 
+        margin-top: 20px; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .jerrys-text-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2.25rem;
+        max-width: 600px;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 7%;
+        }
+
+        .jerrys-text-container2 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2.25rem;
+            max-width: 600px;
+            margin: 0;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 7%;
+            }
+
+        .jerrys-text-container3 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2.25rem;
+            max-width: 600px;
+            margin: 0;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 7%;
+            
+            }
 }
