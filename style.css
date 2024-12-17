@@ -323,28 +323,6 @@ video {
     line-height: normal;
 }
 
-@media (max-width: 768px) {
-    main{
-        padding:0;
-        margin:0;
-    }
-    
-    .footer-container {
-        flex-direction: column;
-        align-items:flex-start;
-        padding-left: 40px;
-    }
-
-    .footer-sektion {
-        margin-bottom: 20px;
-    }
-
-    .footer h1{
-        display: flex;
-        align-items: flex-start;
-    }
-}
-
 
 
 
@@ -445,12 +423,191 @@ video {
     display: none; /* Hide hamburger menu by default */
 }
 
+/* Generel styling for større skærme */
+.tokolonner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+/* Kolonner */
+.venstrekolonne, .hoejrekolonne {
+    flex: 1;
+    padding: 20px;
+}
 
+/* Generelle medieresponsivitet */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 50px; /* Reducer mellemrummet mellem links */
+    }
 
+    .top-overskrift h2 {
+        font-size: 2.5rem; /* Mindre overskriftstørrelse */
+    }
 
+    .top-overskrift p {
+        font-size: 1.5rem; /* Mindre paragrafstørrelse */
+        width: 90%; /* Reducer bredden af teksten */
+    }
 
+    .tokolonner {
+        flex-direction: column; /* Stable kolonnerne ovenpå hinanden */
+    }
 
+    .venstrekolonne, .hoejrekolonne {
+        width: 100%;
+        padding: 10px;
+    }
 
+    .hoejrekolonne {
+        height: 400px; /* Mindre billedehøjde */
+    }
 
+    .venstrekolonne h2 {
+        margin-left: 0; /* Fjern ekstra margin */
+        font-size: 30px;
+    }
 
+    .venstrekolonne .broedtekst {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .venstrekolonne .button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .infobox {
+        left: 0;
+        width: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column; /* Stable headerens elementer */
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Vertikal menu */
+        gap: 20px;
+        text-align: center;
+    }
+
+    .top-overskrift p {
+        font-size: 1.2rem; /* Mindre tekststørrelse */
+        width: 100%;
+    }
+
+    .tokolonner {
+        flex-direction: column; /* Stable kolonner på hinanden */
+        margin-bottom: 20px;
+    }
+
+    .hoejrekolonne {
+        background-size: cover;
+        height: 300px; /* Tilpas billedehøjde på små enheder */
+    }
+
+    .infobox {
+        left: 0;
+        width: 90%;
+        margin:  auto;
+        
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-overskrift p {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 5;
+    }
+
+     .top-overskrift h2 {
+        font-size: 2rem; /* Endnu mindre overskrift */
+      
+    }
+
+    .venstrekolonne h2 {
+        font-size: 24px; /* Mindre overskrift */
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .venstrekolonne .broedtekst {
+        font-size: 16px; /* Mindre brødtekst */
+        margin-bottom: 500px;
+    }
+    
+    .venstrekolonne .button {
+        margin-left: 0;
+        width: 50%;
+        margin-top: 1600px;
+    }
+
+    .infobox {
+       margin-top: ;
+    }
+    
+    video {
+        display: none; /* Skjul videoen på skærme med bredde under 768px */
+}
+}
+
+@media (max-width: 480px) {
+    .top-overskrift h2 {
+        font-size: 1.8rem; /* Endnu mindre overskrift */
+    }
+
+    .top-overskrift p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .venstrekolonne h2 {
+        font-size: 24px; /* Mindre overskrift */
+    }
+
+    .venstrekolonne .broedtekst {
+        font-size: 16px; /* Mindre brødtekst */
+    }
+
+    .footer-sektion {
+        text-align: center;
+    }
+
+    .footer-sektion h1 {
+        font-size: 18px;
+    }
+
+    .footer-container {
+        padding-left: 20px;
+    }
+
+    .infobox {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Hamburger Menu Styles til mindre skærme */
+@media (max-width: 768px) {
+    .ham-menu {
+        display: flex; /* Vis hamburger-menuen */
+    }
+
+    .header-nav .nav-links {
+        display: none; /* Skjul standard-navigationen */
+    }
+
+    .off-screen-menu {
+        display: flex;
+    }
+}
