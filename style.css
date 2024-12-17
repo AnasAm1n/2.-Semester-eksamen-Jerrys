@@ -436,6 +436,11 @@ video {
     padding: 20px;
 }
 
+
+
+
+
+
 /* Generelle medieresponsivitet */
 @media (max-width: 1024px) {
     .nav-links {
@@ -462,6 +467,7 @@ video {
 
     .hoejrekolonne {
         height: 400px; /* Mindre billedehøjde */
+        display: contents;
     }
 
     .venstrekolonne h2 {
@@ -476,7 +482,8 @@ video {
 
     .venstrekolonne .button {
         margin-left: 0;
-        width: 100%;
+        width: 0%;
+        margin-top: 0%;
     }
 
     .infobox {
@@ -549,11 +556,11 @@ video {
     .venstrekolonne .button {
         margin-left: 0;
         width: 50%;
-        margin-top: 1600px;
+        margin-top: 100px;
     }
 
     .infobox {
-       margin-top: ;
+       margin-top: -55%;
     }
     
     video {
