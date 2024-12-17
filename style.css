@@ -64,7 +64,7 @@ section {
 }
 video {
     margin-top: -9%;
-    max-width: 101%; /* Begræns den maksimale bredde */
+    max-width: 100%; /* Begræns den maksimale bredde */
     height: auto;
     aspect-ratio: 16/9; /* Bevarer videoens proportioner */
 }
@@ -110,154 +110,104 @@ video {
 }
 
 
-
-
-
-
-/* Container styling */
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px; /* Afstand mellem tekst og billede */
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    position: absolute;
-    bottom: -150%; /* Juster, hvor meget ned containeren skal flyttes */
-    left: 0;
-    right: 20;
-    margin: 0 auto;
+/* tekst og billede*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* God praksis */
 }
 
-/* Tekstindhold 1996*/
-.text-content {
-    flex: 1; /* Fyld pladsen proportionalt */
-    max-width: 40%; /* Begræns bredden af tekstsektionen */
-    text-align: left;
-    margin-left: 13%;
-    margin-left: 9%;
-    margin-top: -900px;
-
+.tokolonner {
+    width: 100%;
+    display: flex; /* Flex container */
+    margin-bottom: -10%;
 }
 
-.text-content h2 {
-    font-family: 'oswald', sans-serif;
-    font-weight: 200;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    margin-left: 13%;
+.venstrekolonne {
+    width: 50%;
+    padding: 20px;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Elementer under hinanden */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    gap: 15px; /* Mellemrum mellem elementerne */
+    color: #322D27; /* Tekstfarve */
+    font-family: "Roboto Condensed", sans-serif; /* Font */
+    font-size: 16px; /* Standard tekststørrelse */
+    line-height: 1.7; /* Luft mellem linjer */
 }
 
-.text-content p {
-    font-family: 'roboto condensed', sans-serif;
-    font-size: 2rem;
-    line-height: 1.6;
-    margin-bottom: -20%;
-    font-weight: 900;
-    margin-left: 7%;
-}
-
-/*teksten over hover knappen*/
-.container-text{
-    font-family: 'roboto condensed', sans-serif;
-    font-size: 2rem;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    font-weight: 200;
-}
-
-.text-p{
-    color: #322D27;
-font-family: "Roboto Condensed";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-right: 35%;
-position: absolute;
-bottom: -180%;
-left: 2%;
-right: 0;
-margin-left: 5%;
-bottom: -200%;
-}
-
-
-.button {
-    display: inline-block;
-    background-color: #322D27; /* Mørk baggrund */
-    font-family: 'roboto condensed', sans-serif;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 26px;
-    border: none;
-    border-radius: 13px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-    width: 275px;
-    height: 67px;
-    flex-shrink: 0;
-    margin-left: 8%;
-    margin-bottom: 35%;
-    margin-top: 9%;
-}
-
-.button:hover {
-    background-color: #5A4F46;
-    font-family: 'roboto condensed', sans-serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-
-/*billede + tekst*/
-.image-container {
-    position: relative;
-    width: 100%; /* Justér bredde */
-    max-width: 650px; /* Tilpas størrelse */
-    margin: 20px auto;
-}
-
-.image-container img {
-    margin-left: 60%;
-    width: 80%;
-    height: auto;
-    border-radius: 0px; /* Afrundede hjørner */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
-}
-
-.overlay {
-    position: absolute;
-    top: 50%;
-    right: 20%; /* Flytter overlay til højre */
-    transform: translateY(-50%);
-    background-color: #7E705F; /* Mørk gennemsigtig baggrund */
-    padding: 15px 20px;
-    border-radius: 0px;
-    color: #f9f9f9;
-    text-align: center; /* Tekstjustering */
-    width: 200px; /* Boksen bredde */
+.venstrekolonne .broedtekst {
+    max-height: 9.0em;
+    line-height: 1.5em;
+    font-size: 20px; /* Brødtekst størrelse */
+    font-weight: 400; /* Lettere fontvægt */
+    color: #322D27; /* Tekstfarve */
+    font-family: "Roboto Condensed", sans-serif; /* Font */
+    font-size: 20px; /* Standard tekststørrelse */
+    line-height: 1.9; /* Luft mellem linjer */
+    margin-right: 20%;
+    white-space: -20px;
     
 }
-
-.overlay h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-family: 'Oswald', sans-serif;
+.venstrekolonne h2 {
+    margin-left: -190px;
+    margin-top: -295px;
+    font-size: 40px; /* Overskriftstørrelse */
+    font-weight: bold; /* Gør overskriften fed */
+    margin-bottom: 10px; /* Luft under overskriften */
+}
+.hoejrekolonne {
+    width: 40%;
+    height: 800px;
+    right: 0%;
+    background-image: url("images/restauranten.png");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    align-items: center; /* Centrerer indholdet vertikalt */
 }
 
-.overlay p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-family: 'roboto condensed', sans-serif;
+.infobox {
+    width: 300px;
+    height: 360px;
+    background-color: #7E705F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px; /* Tilføjer afrundede hjørner */
+    position: relative;
+    left: -240px;
+    font-family: Oswald, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
 }
 
-
-
+.venstrekolonne .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #322D27; /* Baggrundsfarve */
+    color: #FFFFFF; /* Tekstfarve */
+    text-decoration: none; /* Fjern understregning */
+    font-size: 16px;
+    border-radius: 5px; /* Afrundede hjørner */
+    cursor: pointer;
+    text-align: center;
+    width: 120px; /* Fast bredde for knappen */
+    margin-bottom: -40%;
+    position: absolute;
+    width: 20%;
+    margin-left: -20%;
+    border-radius: 13px
+    
+  
+}   
+.venstrekolonne .button:hover {
+    background-color: #7A5C49; /* Ændret baggrundsfarve ved hover */
+    color: #FFFAF0; /* Ændret tekstfarve ved hover */
+    transform: scale(1.05); /* Lidt forstørrelse for interaktiv effekt */
+}
 
 /*FOOTER*/
 
@@ -503,338 +453,4 @@ bottom: -200%;
 
 
 
-/* Til små og mellemstore mobilskærme */
 
-@media only screen and (max-width: 1024px) {
-    /* Top-overskrift */
-    .top-overskrift h2 {
-        font-size: 35; /* Tilpasset mindre telefoner */
-        margin-bottom: 1px;
-        margin-top: -40px;
-    }
-
-    .top-overskrift p {
-        font-size: 16px;
-        width: 90%; /* Mindre bredde for bedre centrering */
-      text-align: left;
-        margin-top: 5px;
-        margin-left: 25px;
-    }
-
-    .header-nav .nav-links {
-        display: none;
-    }
-
-    /* Show the hamburger menu on mobile */
-    .ham-menu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Show the off-screen menu when active */
-    .off-screen-menu.active {
-        right: 0;
-    }
-
-    /* Adjust navigation layout */
-    .header-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 10px;
-    }
-
-
-    .overskrift {
-        margin-bottom: 4%; /* Justering for at undgå for meget plads */
-        margin-top: 10%;
-    }
-
-    .text-p {
-        color: #322D27;
-        font-size: 20px;
-        font-family: 'Roboto Condensed', sans-serif;
-        position: absolute;
-        bottom: -300%;
-        left: 2%;
-        margin-left: 5%;
-    }
-
-    /* Knappen */
-    .button {
-        width: 50%;
-        font-size: 1.3rem;
-        margin-left: 25%; /* Sørger for, at knappen er centreret */
-        margin-top: 50px;
-    }
-
-    /* Tekstindhold */
-    .text-content h2 {
-        font-size: 24px;
-        margin-left: 0;
-        margin-bottom: 180px;
-        text-align: center; /* Centrer overskriften */
-    }
-
-    .text-content p {
-        font-size: 30px; /* Mindre tekst for bedre læsbarhed */
-        margin-left: 30px;
-        width: 90%;
-        text-align: center;
-        margin-top: -150px;
-
-    }
-
-    .text-p {
-        position: static;
-        margin-top: -30px;
-        font-size: 15px;
-        text-align: left;
-
-    }
-
-    section video {
-        display: none;
-    }
-
-    /* Overlay-tekst */
-
-
-    .overlay {
-        margin-top: 150px;
-        padding: 1px;
-      margin-right: -65px;
-    }
-
-    .overlay h3 {
-        font-size: 2rem; /* Mindre overskrift for mindre skærme */
-    }
-
-    .overlay p {
-        font-size: 1.5rem;
-    }
-
-    /* Billede */
-    .image-container img {
-        display: none; /* Skjul billede på mobil */
-    }
-
-  
-
-    .footer-container {
-        flex-direction: column;
-        align-items:flex-start;
-        padding-left: 40px;
-        margin-top: 50px;
-    }
-
-    .footer-sektion {
-        margin-bottom: 20px;
-    }
-
-    .footer h1{
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .footer {
-        margin-top: 500px;
-    }
-
-}
-
-/* For mobile devices, screens up to 389px wide */
-@media only screen and (max-width: 389px) {
-
-    /* Top-overskrift */
-    .top-overskrift h2 {
-        font-size: 20px; /* Smaller font size for very narrow screens */
-    }
-
-    .top-overskrift p {
-        font-size: 14px;
-        width: 90%; /* Adjusted width for better fit */
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .overskrift {
-        margin-bottom: 5%; /* Increased margin for smaller screens */
-        margin-top: 3%;
-    }
-
-    /* Button styling */
-    .button {
-        width: 80%;
-        font-size: 0.9rem; /* Smaller font size for narrow screens */
-        margin-left: 10%;
-        margin-bottom: 20px;
-    }
-
-    /* Text content */
-    .text-content h2 {
-        font-size: 16px; /* Reduced font size for small screens */
-        text-align: center;
-       
-    }
-
-    .text-content p {
-        font-size: 12px; /* Smaller text for better readability */
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    /* Hide video on mobile */
-    section video {
-        display: none;
-    }
-
-    /* Overlay text adjustments */
-    .overlay h3 {
-        font-size: 1.4rem; /* Adjusted overlay text size */
-    }
-
-    .overlay p {
-        font-size: 1rem;
-    }
-
-    /* Image container adjustments */
-    .image-container img {
-        width: 100%; /* Ensures image fits well on narrow screens */
-        display: hidden; /* Show image on mobile */
-    }
-
-    /* Overlay box */
-    .overlay {
-        width: 90%;
-        padding: 10px;
-        margin: 10px auto;
-    }
-}
-
-
-
-/* Responsiv styling */
-@media screen and (max-width: 1600px) {
-    .top-overskrift h2 {
-        font-size: 48px; /* Mindre overskrift */
-    }
-
-    .top-overskrift p {
-        font-size: 28px; /* Mindre tekst */
-        max-width: 900px; /* Begræns bredde */
-    }
-
-    .overskrift {
-        margin-bottom: 10%;
-        margin-top: -7%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .top-overskrift h2 {
-        font-size: 36px; /* Endnu mindre overskrift */
-    }
-
-    .top-overskrift p {
-        font-size: 24px; /* Mindre tekststørrelse */
-        max-width: 700px;
-    }
-
-    .overskrift {
-        margin-bottom: 8%;
-        margin-top: 4%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .top-overskrift h2 {
-        font-size: 28px;
-    }
-
-    .top-overskrift p {
-        font-size: 20px;
-        max-width: 600px;
-    }
-
-    .overskrift {
-        margin-bottom: 5%;
-        margin-top: 2%;
-    }
-}
-/* Responsiv styling */
-@media screen and (max-width: 1600px) {
-    .text-content {
-        max-width: 50%;
-        margin-left: 7%;
-                margin-bottom: 20%;
-    }
-
-    .text-content h2 {
-        font-size: 1.8rem;
-    }
-
-    .text-content p {
-        font-size: 1.8rem;
-    }
-
-    .image-container img {
-        margin-left: 70%;
-        width: 70%;
-        height: auto;
-    }
-
-    .overlay {
-        right: 14%;
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .content-container {
-        flex-direction: column; /* Skifter til kolonne-layout */
-        bottom: auto;
-    }
-
-    .text-content {
-        max-width: 100%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .image-container img {
-        margin-left: 0;
-        width: 90%;
-    }
-
-    .overlay {
-        right: 0;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .text-content h2,
-    .text-content p,
-    .container-text {
-        font-size: 1.6rem;
-        
-        
-
-    }
-
-    .button {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .overlay h3 {
-        font-size: 1.6rem;
-    }
-
-    .overlay p {
-        font-size: 1rem;
-    }
-}
