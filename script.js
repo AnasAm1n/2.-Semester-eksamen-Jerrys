@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             name: 'Anders P.',
-            text: 'Hyggelig familierestaurant med god stemning. Børnemenuen var et hit hos ungerne, og vi voksne nød de lækre steaks.',
+            text: 'Hyggelig familierestaurant med god stemning. Børnemenuen var et hit hos ungerne, og vi voksne nød de lækre burgere.',
             stars: 4
         },
         {
