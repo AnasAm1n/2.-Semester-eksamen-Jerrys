@@ -89,6 +89,7 @@ video {
     max-width: 800px;
     margin-bottom: 15%;
     margin-top: -5%;
+    margin-right: 30%;
 }
 
 .top-overskrift h2 {
@@ -109,7 +110,7 @@ video {
     height: 338px;
     flex-shrink: 0;
     font-family: 'roboto condensed', sans-serif;
-    text-align: left
+    text-align: left;
 }
 
 
@@ -149,7 +150,8 @@ video {
     font-size: 20px; /* Standard tekststørrelse */
     line-height: 1.9; /* Luft mellem linjer */
     margin-right: 20%;
-    white-space: -20px;
+    margin-left: 5%;
+    white-space: normal;
     margin-bottom: 95px;
     
 }
@@ -552,7 +554,7 @@ video {
     .top-overskrift p {
         font-size: 1rem;
         text-align: center;
-        margin-top: 5;
+        margin-top: 5px;
     }
 
      .top-overskrift h2 {
