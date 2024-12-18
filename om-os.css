@@ -406,6 +406,10 @@ margin-left: 7%;
         align-items: flex-start;
     }
 
+    .footer-container .tlf, .footer-container .mail {
+        margin-bottom: 25px; /* Adds spacing between them */
+    }
+
     h1, h3 {
         margin: 0.5rem 0; 
     }
@@ -416,10 +420,7 @@ margin-left: 7%;
     padding-bottom: 0;
 }
 
-.footer {
-    margin-top: 150px;
-    padding-top: 0;
-}
+
 
 
 .jerrys-text-container2 {

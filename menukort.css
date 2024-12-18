@@ -60,28 +60,23 @@ header {
     object-fit: contain;
 }
 
-/*FOOTER*/
-.footer{
+/* FOOTER */
+.footer {
     background-color: #A7927F;
     color: #322D27;
     padding: 20px 0;
     margin-top: 40px;
- /*   display: flex;
-    justify-content: space-around;
-    align-items: flex-start;*/
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-around;
-    /*width: 100%;*/
     align-items: flex-start;
-    padding:0 20px;
+    padding: 0 20px;
 }
 
-.footer-sektion{
+.footer-sektion {
     text-align: center;
-    /*flex: 1;*/
 }
 
 .footer-sektion h1 {
@@ -91,9 +86,9 @@ header {
     margin-bottom: 10px;
 }
 
-.some-ikoner-box{
+.some-ikoner-box {
     display: flex;
-    gap:16px;
+    gap: 16px;
 }
 
 .social-ikoner {
@@ -108,20 +103,29 @@ header {
     height: 24px;
 }
 
-.tlf{
+.social-ikoner a img:hover {
+    transform: scale(1.1);
+}
+
+.tlf {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:16px;
+    gap: 16px;
+    margin-right: 20px; /* Add space between phone and mail */
 }
 
-.mail{
+.mail {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:16px;
+    gap: 16px;
 }
 
+/* Optionally, add a margin between mail and phone if they are in the same container */
+.footer-container .tlf, .footer-container .mail {
+    margin-bottom: 25px; /* Adds spacing between them */
+}
 .kontakt-sektion p {
     line-height: 1.8;   
     font-family: "Roboto Condensed";

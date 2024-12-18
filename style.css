@@ -281,6 +281,9 @@ video {
     align-items: center;
     gap:16px;
 }
+.footer-container .tlf, .footer-container .mail {
+    margin-bottom: 25px; /* Adds spacing between them */
+}
 
 .kontakt-sektion p {
     line-height: 1.8;   
