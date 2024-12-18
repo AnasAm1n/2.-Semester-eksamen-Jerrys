@@ -1,15 +1,15 @@
-// Function to handle image hover effect
+// Funktion til main hover effekt
 const menuImages = document.querySelectorAll('.menu-image');
 
 menuImages.forEach(image => {
     image.addEventListener('mouseenter', () => {
-        image.style.transform = 'scale(1.1)'; // Scale up the image
-        image.style.boxShadow = '0 0px 0px rgba(0, 0, 0, 0.3)'; // Add shadow
+        image.style.transform = 'scale(1.1)'; // Skaler billedet
+        image.style.boxShadow = '0 0px 0px rgba(0, 0, 0, 0.3)'; // Tilføj skygge
     });
 
     image.addEventListener('mouseleave', () => {
         image.style.transform = 'scale(1)'; // Reset scale
-        image.style.boxShadow = 'none'; // Remove shadow
+        image.style.boxShadow = 'none'; // Fjern skygge
     });
 });
 
