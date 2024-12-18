@@ -384,6 +384,7 @@ margin-left: 7%;
     line-height: 1.6; 
     padding: 0px 10px; 
     text-align: center;
+}
 
 
     .footer-container {
@@ -407,7 +408,7 @@ margin-left: 7%;
     h1, h3 {
         margin: 0.5rem 0; 
     }
-}
+
 
 .reviews-section {
     margin-bottom: 0;
