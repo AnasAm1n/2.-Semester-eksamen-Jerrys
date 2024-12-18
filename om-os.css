@@ -573,9 +573,10 @@ margin-left: 7%;
 
 
     .reviews-section h1 {
-        font-size: 30px;
+        font-size: 27px;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        margin-top: 100px;
     }
 
     .review-card h3 {
