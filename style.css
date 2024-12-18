@@ -526,10 +526,18 @@ video {
         height: 300px; /* Tilpas billedehøjde på små enheder */
     }
 
+    .venstrekolonne .button {
+        margin-left: 0;
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    
     .infobox {
         left: 0;
         width: 90%;
         margin:  auto;
+        margin-top: -55%;
         
     }
 
@@ -546,6 +554,7 @@ video {
 
      .top-overskrift h2 {
         font-size: 2rem; /* Endnu mindre overskrift */
+        margin-top: 9%;
       
     }
 
@@ -563,11 +572,12 @@ video {
     .venstrekolonne .button {
         margin-left: 0;
         width: 50%;
-        margin-top: 0px;
+        margin-top: -450px;
     }
 
     .infobox {
-       margin-top: -55%;
+       margin-top: 80%;
+       margin-bottom: -30%;
     }
     
     video {
