@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const reviews = [
         {
             name: 'Thomas N.',
-            text: 'Skiller sig ud med let og frisk smag. Lækre grillretter og pizzaer.',
+            text: 'Skiller sig ud med let og frisk smag. Solmodne citrusfrugter og eksotiske undertoner gør den til en dejlig alkoholfri drik.',
             stars: 4
         },
         {
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             name: 'Anders P.',
-            text: 'Hyggelig familierestaurant med god stemning. Børnemenuen var et hit hos ungerne, og vi voksne nød de lækre burgere.',
+            text: 'Hyggelig familierestaurant med god stemning. Børnemenuen var et hit hos ungerne, og vi voksne nød de lækre steaks.',
             stars: 4
         },
         {
             name: 'Sophie K.',
-            text: 'Perfekt sted til en date night! Romantisk atmosfære og virkelig god mad. Deres mad er fantastisk.',
+            text: 'Perfekt sted til en date night! Romantisk atmosfære og virkelig god mad. Deres dessertmenu er fantastisk.',
             stars: 5
         }
     ];
@@ -78,3 +78,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Change review every 5 seconds
     setInterval(fadeTransition, 5000);
 });
+
