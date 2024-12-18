@@ -66,10 +66,11 @@ section {
     
 }
 video {
-    margin-top: -9%;
+    margin-top: -10%;
     max-width: 100%; /* Begræns den maksimale bredde */
     height: auto;
     aspect-ratio: 16/9; /* Bevarer videoens proportioner */
+    z-index: -99999;
 }
 
 
