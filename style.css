@@ -54,6 +54,9 @@ header {
 }
 
 
+
+
+
 /*intro video-styling*/
 section {
     display: flex;
@@ -147,19 +150,23 @@ video {
     line-height: 1.9; /* Luft mellem linjer */
     margin-right: 20%;
     white-space: -20px;
+    margin-bottom: 95px;
     
 }
 .venstrekolonne h2 {
     margin-left: -190px;
-    margin-top: -295px;
+    margin-top: -395px;
     font-size: 40px; /* Overskriftstørrelse */
     font-weight: bold; /* Gør overskriften fed */
     margin-bottom: 10px; /* Luft under overskriften */
 }
 .hoejrekolonne {
+    padding: 100%;
+    margin: auto;
     width: 40%;
     height: 800px;
-    right: 0%;
+    margin-left: 7%;
+    margin-right: 2%;
     background-image: url("images/restauranten.png");
     background-size: cover;
     position: relative;
@@ -171,6 +178,7 @@ video {
 .infobox {
     width: 300px;
     height: 360px;
+    margin-right: 15%;
     background-color: #7E705F;
     color: white;
     padding: 20px;
@@ -195,11 +203,12 @@ video {
     cursor: pointer;
     text-align: center;
     width: 120px; /* Fast bredde for knappen */
-    margin-bottom: -40%;
-    position: absolute;
-    width: 20%;
+    margin-bottom: -45%;
+    position: relative;
+    width: 50%;
     margin-left: -20%;
     border-radius: 13px  
+   
     
 }   
 
@@ -322,8 +331,6 @@ video {
     font-weight: 400;
     line-height: normal;
 }
-
-
 
 
 
@@ -556,7 +563,7 @@ video {
     .venstrekolonne .button {
         margin-left: 0;
         width: 50%;
-        margin-top: 100px;
+        margin-top: 0px;
     }
 
     .infobox {
@@ -597,10 +604,17 @@ video {
     .footer-container {
         padding-left: 20px;
     }
+    .venstrekolonne .button {
+        margin-left: 0;
+        width: 50%;
+        margin-top: -400px;
+    }
 
     .infobox {
         width: 100%;
         padding: 15px;
+        margin-top: 40%;
+        margin-bottom: -60%;
     }
 }
 
