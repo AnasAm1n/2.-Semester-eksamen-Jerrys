@@ -51,7 +51,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    display: hidden; /* Initially hidden */
+ 
 }
 
 /* Logo styling */
@@ -341,7 +341,6 @@ body {
 /* Hover effect for images */
 .menu-image:hover {
     transform: scale(1.05); /* Slightly enlarge the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); Add shadow on hover
 }
 
 .menu-item h2 {
@@ -416,7 +415,7 @@ body {
 
 .filter-button.drikkevare .filter-icon {
     width: 30px; /* Adjust width for drikkevare filter */
-    height: px; /* Adjust height for drikkevare filter */
+
 }
 
 .filter-button.active .filter-icon {
@@ -436,7 +435,6 @@ body {
 .menu-item img[src*="pepsimax.png"] {
     width: 130px; /* Set a smaller width for the drink images */
     height: auto; /* Maintain aspect ratio */
-    border-radius: px; /* Optional: add rounded corners for a softer look */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -546,7 +544,6 @@ body {
     transition: background-color 0.3s; /* Smooth transition for hover effect */
     color: #ffffff; /* Change text color here */
     font-family: 'Roboto condensed', sans-serif; /* Apply Oswald font */
-    margin-top: ;
 }
 
 /* Skub pizza add-knappen lidt op */
