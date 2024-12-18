@@ -406,6 +406,9 @@ margin-left: 7%;
         align-items: flex-start;
     }
 
+    .footer-container .tlf, .footer-container .mail {
+        margin-bottom: 25px; /* Adds spacing between them */
+    }
     h1, h3 {
         margin: 0.5rem 0; 
     }
@@ -465,6 +468,19 @@ margin-left: 7%;
 @media (max-width: 768px) {
     .herotext {
         margin-bottom: 30px; 
+    }
+
+    .review-card {
+        padding: 30px 20px;
+        width: 100%;
+        background-color: #c6b5a8;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .jerrys #jerryinfo {
@@ -538,4 +554,56 @@ margin-left: 7%;
             margin-left: 7%;
             
             }
+}
+
+@media (max-width: 768px) {
+    .jerrys h1 {
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+        margin-right: 8%;
+        margin-left: 2%;
+    }
+
+    .jerrys h3 {
+        font-size: 22px;
+        margin-bottom: 0.5rem;
+        margin-right: 8%;
+        margin-left: 2%;
+    }
+
+
+    .reviews-section h1 {
+        font-size: 27px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 100px;
+    }
+
+    .review-card h3 {
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+
+    .review-card p {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .stars {
+        font-size: 20px;
+    }
+}
+
+.jerrys-text-container3 h1 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+    margin-right: 8%;
+    margin-left: 2%;
+}
+
+.jerrys-text-container3 h3 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    margin-right: 8%;
+    margin-left: 2%;
 }
