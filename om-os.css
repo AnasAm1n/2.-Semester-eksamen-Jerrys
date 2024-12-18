@@ -347,7 +347,7 @@ margin-left: 7%;
     
         .jerrys img {
             order: 2; 
-            width: 100%; 
+            width: 20%; 
             margin-bottom: 1rem; 
         }
     
@@ -362,6 +362,7 @@ margin-left: 7%;
             margin: 0;
             padding: 0 1rem;
         }
+      
     }
 
 
@@ -459,33 +460,6 @@ margin-left: 7%;
 }
 
 
-@media (max-width: 768px) {
-    .jerrys #jerryinfo {
-        width: 100%; 
-        height: auto; 
-        max-width: none; 
-        transition: none; 
-        margin-bottom: 20px; 
-    }
-
-
-    #jerryinfo {
-        width: 100%; 
-        height: auto; 
-        max-width: none; 
-        transition: none; 
-        margin-bottom: 20px; 
-    }
-
-    
-    #billede2 {
-        width: 100%; 
-        height: auto; 
-        margin-top: 20px; 
-        margin-right: 0; 
-        margin-bottom: 20px; 
-    }
-}
 
 
 @media (max-width: 768px) {
@@ -512,12 +486,21 @@ margin-left: 7%;
 
     
     #billede2 {
-        width: 100%; 
+        width: 80%; 
         height: auto; 
         margin-top: 20px; 
         margin-right: 0; 
         margin-bottom: 20px; 
     }
+
+    #jerry {
+        width: 80%; 
+        height: auto; 
+        margin-top: 20px; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    
 
     .jerrys-text-container {
         flex: 1;
