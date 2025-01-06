@@ -54,6 +54,15 @@ header {
     object-fit: contain;
 }
 
+/* Standardvisning: Skjul mobil-logo og vis desktop-logo */
+.logo-mobile {
+    display: none;
+}
+
+.logo-desktop {
+    display: block;
+}
+
 /* Hamburger Menu Styles */
 .ham-menu {
     height: 40px; 
@@ -162,6 +171,14 @@ header {
     /* Show the off-screen menu when active */
     .off-screen-menu.active {
         right: 0; /* Slide in when active */
+    }
+
+    .logo-desktop {
+        display: none; /* Skjul desktop-logo */
+    }
+
+    .logo-mobile {
+        display: block; /* Vis mobil-logo */
     }
 }
 
