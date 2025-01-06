@@ -13,33 +13,36 @@ menuImages.forEach(image => {
     });
 });
 
-// Funktion til at håndtere plus-ikon hover-effekt
+// Variabel til at holde den samlede pris
+let totalPrice = 0;
+
+// Funktion til at håndtere klik på tilføj-knap
 const addButtons = document.querySelectorAll('.add-button');
-
 addButtons.forEach(button => {
-    const icon = button.querySelector('.icon');
-    const activeIcon = icon.getAttribute('data-active'); // Sti til det aktive ikon
-
+    // Behold den eksisterende hover-effekt
     button.addEventListener('mouseenter', () => {
+        const icon = button.querySelector('.icon');
+        const activeIcon = icon.getAttribute('data-active'); // Sti til det aktive ikon
         icon.src = activeIcon; // Skift til aktivt ikon ved hover
     });
 
     button.addEventListener('mouseleave', () => {
+        const icon = button.querySelector('.icon');
         icon.src = 'images/plus-ikon.png'; // Skift tilbage til plus-ikon
     });
 
-    // Funktion til at håndtere klik på tilføj-knap og vise fejlbesked
+    // Ny event listener til at tilføje varen til kurven
     button.addEventListener('click', () => {
-        // Hent containeren til fejlbeskeden
-        const errorMessage = document.getElementById('error-message');
-        
-        // Vis fejlbeskeden
-        errorMessage.style.display = 'block';
+        const menuItem = button.closest('.menu-item');
+        const menuItemName = menuItem.querySelector('h2').innerText;
+        const menuItemPrice = parseFloat(menuItem.querySelector('span').innerText.replace(' DKK', ''));
 
-        // Eventuelt skjul den efter nogle sekunder (hvis du vil auto-skjule fejlbeskeden efter en forsinkelse)
-        setTimeout(() => {
-            errorMessage.style.display = 'none';
-        }, 3000); // Fejlbeskeden forsvinder efter 3 sekunder
+        // Add item to cart
+        cartItems.push({ name: menuItemName, price: menuItemPrice });
+        totalPrice += menuItemPrice;
+
+        // Update cart display
+        updateCartDisplay();
     });
 });
 
@@ -198,3 +201,64 @@ function updateToppings() {
 document.getElementById('pepperoniCheckbox').addEventListener('change', updateToppings);
 document.getElementById('jalapenosCheckbox').addEventListener('change', updateToppings);
 document.getElementById('peberfrugtCheckbox').addEventListener('change', updateToppings);
+
+// Function to show/hide the contents of the cart
+const cartIcon = document.getElementById('cart-icon');
+const cartItems = document.getElementById('cart-items');
+
+cartIcon.addEventListener('click', () => {
+    cartItems.classList.toggle('show'); // Toggle 'show' class to open/close the cart
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const addButtons = document.querySelectorAll('.add-button');
+    const cartList = document.getElementById('cart-list');
+    const totalPriceDisplay = document.getElementById('total-price');
+    const cartIcon = document.getElementById('cart-icon');
+    const cartContent = document.querySelector('.cart-content'); // Vælg kurvindholdet
+    let cartItems = []; // Array til at holde kurv varer
+    let totalPrice = 0; // Variabel til at holde den samlede pris
+
+    addButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const menuItem = button.closest('.menu-item');
+            const menuItemName = menuItem.querySelector('h2').innerText;
+            const menuItemPrice = parseFloat(menuItem.querySelector('span').innerText.replace(' DKK', ''));
+
+            // Tilføj vare til kurven
+            cartItems.push({ name: menuItemName, price: menuItemPrice });
+            totalPrice += menuItemPrice;
+
+            // Opdater kurv visning
+            updateCartDisplay();
+        });
+    });
+
+    function updateCartDisplay() {
+        // Ryd den nuværende kurv liste
+        cartList.innerHTML = '';
+
+        // Tilføj hver vare til kurv listen
+        cartItems.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.innerText = `${item.name} - ${item.price} DKK`;
+            cartList.appendChild(listItem);
+        });
+
+        // Opdater total pris visning
+        totalPriceDisplay.innerText = `Total: ${totalPrice} DKK`;
+    }
+
+    // Vis/skjul kurvindhold når kurv-ikonet klikkes
+    cartIcon.addEventListener('click', () => {
+        // Tjek om kurv-indholdet er skjult eller vist
+        if (cartContent.style.display === 'none' || cartContent.style.display === '') {
+            cartContent.style.display = 'block'; // Vis indholdet
+        } else {
+            cartContent.style.display = 'none'; // Skjul indholdet
+        }
+    });
+});
+
+
+

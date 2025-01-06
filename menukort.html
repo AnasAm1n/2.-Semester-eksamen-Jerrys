@@ -175,9 +175,12 @@
                 <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
             </button>
         </div>
+
+  
+
+        
     </main>
 
-   
     <div class="pizza-builder">
         <h2>Byg din egen pizza</h2>
         <div class="pizza-container">
@@ -204,6 +207,16 @@
             <button class="add-button pizza-add-button">
                 <img src="images/plus-ikon.png" alt="Add" class="icon" data-active="images/plus-ikon-farvet.png">
             </button>
+        </div>
+    </div>
+
+    <!-- Kurv-sektion med ikon -->
+    <div class="cart-container" id="cart-container">
+        <img src="images/kurv-ikon.png" alt="Indkøbskurv" class="cart-icon" id="cart-icon">
+        <div class="cart-content" style="display: none;"> <!-- Initially hidden -->
+            <h3>Indkøbskurv</h3>
+            <ul id="cart-list"></ul>
+            <p id="total-price">Total: 0 DKK</p>
         </div>
     </div>
 
@@ -249,8 +262,7 @@
         <!---Copyright-->
         <p class="Footer-bottom">&copy; COPYRIGHT 2024</p>
     </footer>
-</body>
-      
+
     <script src="menukort.js" defer></script>
 </body>
 </html>

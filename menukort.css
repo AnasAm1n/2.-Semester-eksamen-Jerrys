@@ -486,8 +486,21 @@ body {
 }
 
 .topping-options {
-    margin-top: 20px;
- 
+    margin-top: 10px; /* Afstand mellem pizza og toppings */
+}
+
+.topping-checkbox {
+    margin-right: 5px; /* Afstand mellem checkbox og label */
+}
+
+.remove-button {
+    margin-left: 10px; /* Afstand mellem vare og fjern-knap */
+    background-color: red; /* Rød baggrund for fjern-knap */
+    color: white; /* Hvid tekst */
+    border: none; /* Ingen kant */
+    cursor: pointer; /* Pointer cursor */
+    padding: 5px; /* Polstring */
+    border-radius: 3px; /* Rundede hjørner */
 }
 
 .price-display {
@@ -755,4 +768,144 @@ body {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    /* Cart Button */
+.cart-container {
+    position: relative;
+  }
+  
+  .cart-button {
+    background-color: #322d27; /* Match dit tema */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .cart-item-count {
+    background-color: #f00; /* Rød for kontrast */
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  /* Cart Dropdown */
+  .cart-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .cart-dropdown h3 {
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #322d27;
+    text-transform: uppercase;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-total {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .checkout-button {
+    width: 100%;
+    background-color: #322d27;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .checkout-button:hover {
+    background-color: #5a4f46;
+  }
+  
+  
 }
+
+/* Stil for kurv-container */
+.cart-container {
+    position: fixed; /* Fast position for at holde den synlig */
+    top: 10px; /* Afstand fra toppen */
+    right: 10px; /* Afstand fra højre */
+    z-index: 1000; /* Sørg for, at den er ovenpå andre elementer */
+}
+
+/* Stil for kurv ikon */
+.cart-icon {
+    width: 50px; /* Juster bredden som ønsket */
+    height: auto; /* Behold aspektforholdet */
+}
+
+/* Stil for kurv indhold */
+.cart-content {
+    display: none; /* Skjul indholdet som standard */
+    background-color: #fff; /* Hvid baggrund for kurven */
+    border: 1px solid #A7927F; /* Kantfarve */
+    border-radius: 5px; /* Runde hjørner */
+    padding: 10px; /* Indvendig afstand */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Skygge for dybde */
+    width: 200px; /* Reduceret bredde for kurven */
+}
+
+/* Aktiv stil for at vise kurv indhold */
+.cart-content.show {
+    display: block; /* Vis indholdet */
+}
+
+/* Stil for kurv liste */
+#cart-list {
+    list-style-type: none; /* Fjern punkttegn */
+    padding: 0; /* Fjern padding */
+    margin: 0; /* Fjern margin */
+}
+
+/* Stil for hver vare i kurven */
+#cart-list li {
+    padding: 5px 0; /* Padding for hver vare */
+    border-bottom: 1px solid #ccc; /* Lys kant for adskillelse */
+}
+
+/* Stil for total pris */
+#total-price {
+    font-weight: bold; /* Gør total pris fed */
+    margin-top: 10px; /* Margin over total pris */
+    text-align: center; /* Center total pris */
+}
+
