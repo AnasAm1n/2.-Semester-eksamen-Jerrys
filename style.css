@@ -53,8 +53,14 @@ header {
     object-fit: contain;
 }
 
+/* Standardvisning: Skjul mobil-logo og vis desktop-logo */
+.logo-mobile {
+    display: none;
+}
 
-
+.logo-desktop {
+    display: block;
+}
 
 /*intro video-styling*/
 section {
@@ -516,6 +522,14 @@ video {
         text-align: center;
     }
 
+    .logo-desktop {
+        display: none; /* Skjul desktop-logo */
+    }
+
+    .logo-mobile {
+        display: block; /* Vis mobil-logo */
+    }
+    
     .top-overskrift p {
         font-size: 1.2rem; /* Mindre tekststørrelse */
         width: 100%;
