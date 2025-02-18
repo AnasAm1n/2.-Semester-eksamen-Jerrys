@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const nameElement = document.querySelector('.review-name');
     const textElement = document.querySelector('.review-text');
-    const starsContainer = document.querySelector('.stars');
+    const starsContainer = document.querySelector('.stars'); 
     let currentIndex = 0;
 
     function updateStars(count) {
